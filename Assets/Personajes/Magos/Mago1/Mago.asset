@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantType: 0
   prefab: {fileID: 3118328225198995877, guid: 7b8db570c9ff48348825afe70b074324, type: 3}
-  cost: 25
+  cost: 75
