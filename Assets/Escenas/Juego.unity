@@ -214,6 +214,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1356942250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356942254}
+  - component: {fileID: 1356942253}
+  - component: {fileID: 1356942251}
+  m_Layer: 0
+  m_Name: Dragones_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1356942251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356942250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c84b0a56b61dd1459bf03160ffedcc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombiePrefab: {fileID: 3118328225198995877, guid: 22a3fa5c8b2141b4ea70423fc582b8df, type: 3}
+  numerro: 0
+--- !u!114 &1356942253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356942250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455fd0fedc02a1841984ab27cc90f57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1356942254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356942250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.20767166, y: 1.8492688, z: -0.0038970257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1497466728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -432,6 +491,7 @@ GameObject:
   - component: {fileID: 1868764748}
   - component: {fileID: 1868764747}
   - component: {fileID: 1868764749}
+  - component: {fileID: 1868764750}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -481,6 +541,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingSun: 1000
   currentSun: 0
+--- !u!114 &1868764750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868764746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc92157189113844b1ca67a5be7700c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9099637410448653895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,6 +564,14 @@ PrefabInstance:
     - target: {fileID: 1245952816882966559, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
       propertyPath: m_Name
       value: Creacion_Casillas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631044840778586289, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
+      propertyPath: espacio
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631044840778586289, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
+      propertyPath: offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7818691276960783899, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -545,6 +625,7 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 9099637410448653895}
   - {fileID: 1868764748}
+  - {fileID: 1356942254}
   - {fileID: 1810282947}
   - {fileID: 1497466728}
   - {fileID: 1654761478}

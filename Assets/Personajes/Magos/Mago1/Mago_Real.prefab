@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3626371869476223005}
   - component: {fileID: 6987185768640997253}
   - component: {fileID: 7940014299237230239}
+  - component: {fileID: 5880080895842593516}
   m_Layer: 0
   m_Name: Mago_Real
   m_TagString: Untagged
@@ -106,3 +107,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5880080895842593516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3118328225198995877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1efa5d4492e694580b43010a7c7684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 0
+  currentCell: {fileID: 0}
+  health: 5
+  canAttack: 0
+  shootCooldown: 1.5
+  damage: 0

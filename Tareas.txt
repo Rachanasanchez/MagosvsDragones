@@ -1,0 +1,5 @@
+Hacer que salga las casillas de césped verde claro y oscuro intercalado, es decir: Casilla 1 -> verde claro, Casilla 2 -> verde oscuro, etc.
+Hacer que el dragón haga daño al mago (tener en cuenta: añadir en el fotograma de la animación el nombre de la función del script del dragón. Cunado se elimine al mago, se tiene que eliminar de la casilla que ocupa (OJO)
+
+--NO - Crear el objeto bola de fuego con su animación
+--NO - Manager de spawn zombis. Ejemplo: 15 zombis en 2 minutos (NO HACER)

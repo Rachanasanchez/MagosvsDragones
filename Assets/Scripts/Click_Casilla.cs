@@ -11,6 +11,10 @@ public class Click_Casilla : MonoBehaviour
     [Header("Cost")]
     public int cost;
 
+    [Header("Posicion")]
+    public int Fila;
+    public int Columna;
+
     // Propiedades públicas (seguras)
     public bool IsOccupied => isOccupied;
     public bool IsAvailable => isAvailable;

@@ -104,7 +104,8 @@ public class PlantPlacementManager : MonoBehaviour
 
         cell.SetOccupied(true);
 
-        Debug.Log($"Planta colocada en {cell.name} | Coste: {draggingCost}");
+        //settear todo del mago
+        draggingPlant.GetComponent<Magos>().Initialize(cell);
 
         draggingPlant = null; // ya no estamos colocando
     }
@@ -115,6 +116,5 @@ public class PlantPlacementManager : MonoBehaviour
             Destroy(draggingPlant);
 
         draggingPlant = null;
-        Debug.Log("Colocación cancelada.");
     }
 }

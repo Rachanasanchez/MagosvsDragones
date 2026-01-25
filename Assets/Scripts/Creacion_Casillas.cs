@@ -16,13 +16,20 @@ public class Creacion_Casillas : MonoBehaviour
     [Header("Centrar grid")]
     public bool centerGrid = true;
 
+    [Header("Spawn Dragones")]
+    public float espacio;
+
     private Transform container;
 
     private void Start()
     {
         CreateContainer();
+
+        GridManager.Instance.InitializeGrid(rows, columns);
+
         SpawnGrid();
     }
+
 
     private void CreateContainer()
     {
@@ -54,9 +61,24 @@ public class Creacion_Casillas : MonoBehaviour
                                  + offset
                                  + new Vector3(col * spacingX, -row * spacingY, 0f);
 
-                GameObject cell = Instantiate(cellPrefab, position, Quaternion.identity, container);
-                cell.name = $"Cell_{row + 1}_{col + 1}";
+                GameObject cellObj = Instantiate(cellPrefab, position, Quaternion.identity, container);
+                cellObj.name = $"Cell_{row}_{col}";
+
+                Click_Casilla casilla = cellObj.GetComponent<Click_Casilla>();
+                casilla.Fila = row;
+                casilla.Columna = col;
+
+                GridManager.Instance.RegisterCell(casilla);
+
+                // Si es la última columna de la fila, crear el SpawnPoint
+                if (col == columns - 1)
+                {
+                    GameObject spawnPoint = new GameObject($"SpawnPoint_{row}");
+                    spawnPoint.transform.SetParent(container);
+                    spawnPoint.transform.position = position + new Vector3(espacio, 0f, 0f);
+                }
             }
         }
+
     }
 }

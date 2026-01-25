@@ -123,112 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dragones_0
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 1467
-        width: 63
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8646b6856ca408349818258208da040b
-      internalID: 967586739
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_1
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 1467
-        width: 64
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c3e0cae73ee85a438e0ee778e8769d7
-      internalID: 1569404486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_2
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 1461
-        width: 63
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1376c64a2a9c284492ea33a4e264313
-      internalID: 1097342277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_3
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 1461
-        width: 61
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 456d8b4716a5a714b9f409b38b50e66a
-      internalID: -647851510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_4
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 1467
-        width: 61
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4f8521e93459104fa1fde02153d1145
-      internalID: -1040725779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_5
+      name: 1
       rect:
         serializedVersion: 2
         x: 7
@@ -249,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_6
+      name: 2
       rect:
         serializedVersion: 2
         x: 78
@@ -270,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_7
+      name: 3
       rect:
         serializedVersion: 2
         x: 151
@@ -291,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_8
+      name: 4
       rect:
         serializedVersion: 2
         x: 224
@@ -312,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_9
+      name: 5
       rect:
         serializedVersion: 2
         x: 293
@@ -333,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_10
+      name: 6
       rect:
         serializedVersion: 2
         x: 364
@@ -354,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_11
+      name: 7
       rect:
         serializedVersion: 2
         x: 437
@@ -375,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_12
+      name: 8
       rect:
         serializedVersion: 2
         x: 509
@@ -396,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_13
+      name: 9
       rect:
         serializedVersion: 2
         x: 580
@@ -417,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_14
+      name: 10
       rect:
         serializedVersion: 2
         x: 651
@@ -438,742 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_15
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 1315
-        width: 63
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e142632f5a6f43a4eaf2cac62cbd1a5b
-      internalID: -955006569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_16
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 1315
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa9576dff104ebe41838eed4d53bce5c
-      internalID: 794506981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_17
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 1307
-        width: 65
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e4dbce6e345be645a9ae129ccbafafc
-      internalID: -59909134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_18
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 1309
-        width: 67
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b16d7c29a9f35154993ac2e2e7b8c637
-      internalID: -1536573242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_19
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 1315
-        width: 67
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc8031062f85ddc47816ea602d4e0084
-      internalID: -1546178225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_20
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 1235
-        width: 69
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55f7089b31b58e841b8f218adf80bbfb
-      internalID: -466172398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_28
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 1150
-        width: 65
-        height: 73
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb7251b1ca797e242977e5a179b49247
-      internalID: 216973594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_37
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 1150
-        width: 71
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fb22ee1a3886624eae3fe094a20ea8d
-      internalID: 532170392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_38
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 1144
-        width: 71
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd01ce3a77e755443bbfd718c968b6fb
-      internalID: 1561817888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_39
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 1144
-        width: 72
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da47b282b46f3d24882b5056385e3c73
-      internalID: 1609501929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_40
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 1150
-        width: 75
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d509fa8e71646b843ad668c98cb97798
-      internalID: -987699143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_41
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 1072
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5419e0c2c7bf17f4fb00b93f0f291cd6
-      internalID: -1323465506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_42
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 1075
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e6ce277a72960b4e9f768225273c845
-      internalID: 1941507363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_43
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 1068
-        width: 75
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dde353a8df84ac64092f6b2ec5c51fc5
-      internalID: 1250855112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_44
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 1080
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71839b817bf5c4f4f80e6998afeac21e
-      internalID: -1473880579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_45
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 1069
-        width: 62
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ac4fd5724633294fbc54af018174bb3
-      internalID: 917284224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_46
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 1079
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc235bd198c2f584a954fa123792e63e
-      internalID: -347512255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_47
-      rect:
-        serializedVersion: 2
-        x: 343
-        y: 1075
-        width: 63
-        height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dacbed8c3c8213042a96abc901de57fb
-      internalID: 1298642480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_48
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 977
-        width: 59
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e163b3070c1c704a8dabc5b610ba12d
-      internalID: -1360497132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_49
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 977
-        width: 22
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3ee0142b379f8f4289b2478e7e8687e
-      internalID: -1380806106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_50
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 977
-        width: 76
-        height: 86
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dde4ebfe1570c0f4fb1ae0fdf76dce83
-      internalID: -2101627404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_51
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 979
-        width: 85
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e0efe18947e46749b7a3b20623fdee9
-      internalID: 873588994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_52
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 980
-        width: 105
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a69bc38cd4164cb4a827027f7133619d
-      internalID: 1011986370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_53
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 979
-        width: 98
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f33c7c3d222019c47899f14a0279b85c
-      internalID: 1944067506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_54
-      rect:
-        serializedVersion: 2
-        x: 495
-        y: 979
-        width: 71
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d5c3bf906ccc244dbd014e741936905
-      internalID: 1160684288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_55
-      rect:
-        serializedVersion: 2
-        x: 570
-        y: 979
-        width: 11
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 997f1724626200d429cb63321f28277f
-      internalID: 1160848736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_56
-      rect:
-        serializedVersion: 2
-        x: 591
-        y: 977
-        width: 68
-        height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afec72fdcd05f664d80aa94d14e5afda
-      internalID: 2126144158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_57
-      rect:
-        serializedVersion: 2
-        x: 670
-        y: 980
-        width: 81
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2b0328c323409b45b709e17a9179d31
-      internalID: 1515731010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_59
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 877
-        width: 61
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4e03d4d8c96f284abe053e3c4c8d0c0
-      internalID: 2016971924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_60
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 877
-        width: 69
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb1b2cc6df3034840b749edb9bd7b956
-      internalID: -1367503654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_62
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 877
-        width: 55
-        height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f33c8e846d5d36d4693af19faab56ea8
-      internalID: 845629665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_64
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 877
-        width: 61
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d273d14ecf43d8b4588bfd0e4ef9b913
-      internalID: 205128384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_66
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 877
-        width: 55
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e8899294075fec4da559727d92230bb
-      internalID: -1762754528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_68
-      rect:
-        serializedVersion: 2
-        x: 439
-        y: 877
-        width: 56
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3addd1552efce014a8d83218b438a514
-      internalID: -1612932828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_69
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 877
-        width: 55
-        height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdabfc46bbd16fc4c8b62bde784305d5
-      internalID: -2017196173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_70
+      name: 11
       rect:
         serializedVersion: 2
         x: 16
@@ -1194,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_71
+      name: 12
       rect:
         serializedVersion: 2
         x: 87
@@ -1215,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_72
+      name: 13
       rect:
         serializedVersion: 2
         x: 172
@@ -1236,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_73
+      name: 14
       rect:
         serializedVersion: 2
         x: 284
@@ -1257,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_74
+      name: 15
       rect:
         serializedVersion: 2
         x: 399
@@ -1278,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_75
+      name: 16
       rect:
         serializedVersion: 2
         x: 512
@@ -1299,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_78
+      name: 17
       rect:
         serializedVersion: 2
         x: 623
@@ -1320,179 +480,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_83
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 693
-        width: 64
-        height: 79
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8af74c8f118877a47b2cdcc7b4ea6ed2
-      internalID: -967663871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_84
-      rect:
-        serializedVersion: 2
-        x: 86
-        y: 693
-        width: 64
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f95ec512030f074a965bc6e3b11b8d6
-      internalID: 610104486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_85
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 755
-        width: 31
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ad780711176fc14fa5bac728f233312
-      internalID: -1956151782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_86
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 752
-        width: 26
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce2945e5abffdc54099a2ce88eb3a808
-      internalID: 1415240814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_87
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 758
-        width: 23
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd9a9127f1eef6148bec558a42d01b77
-      internalID: 1513813319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_88
-      rect:
-        serializedVersion: 2
-        x: 158
-        y: 687
-        width: 64
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ebd6990bf0f396e4b883450497c3f5e4
-      internalID: -1420413057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_89
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 688
-        width: 61
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ff9f0095d9866144ba47b0309db9f5c
-      internalID: -782155735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_90
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 693
-        width: 63
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 257e353a4d4294b4a888a8a99e35420a
-      internalID: 1272959381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_91
+      name: 18
       rect:
         serializedVersion: 2
         x: 11
-        y: 612
+        y: 613
         width: 61
         height: 65
       alignment: 0
@@ -1509,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_92
+      name: 19
       rect:
         serializedVersion: 2
         x: 80
@@ -1530,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_93
+      name: 20
       rect:
         serializedVersion: 2
         x: 160
@@ -1551,13 +543,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_94
+      name: 21
       rect:
         serializedVersion: 2
         x: 241
-        y: 610
+        y: 593
         width: 71
-        height: 65
+        height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1572,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_95
+      name: 22
       rect:
         serializedVersion: 2
         x: 321
@@ -1593,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_96
+      name: 23
       rect:
         serializedVersion: 2
         x: 408
@@ -1614,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_97
+      name: 24
       rect:
         serializedVersion: 2
         x: 501
@@ -1635,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_98
+      name: 25
       rect:
         serializedVersion: 2
         x: 616
@@ -1656,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_99
+      name: 26
       rect:
         serializedVersion: 2
         x: 722
@@ -1677,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_100
+      name: 27
       rect:
         serializedVersion: 2
         x: 830
@@ -1698,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_101
+      name: 28
       rect:
         serializedVersion: 2
         x: 937
@@ -1719,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_102
+      name: 29
       rect:
         serializedVersion: 2
         x: 1048
@@ -1740,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_103
+      name: 30
       rect:
         serializedVersion: 2
         x: 1160
@@ -1761,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_104
+      name: 31
       rect:
         serializedVersion: 2
         x: 1269
@@ -1782,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_105
+      name: 32
       rect:
         serializedVersion: 2
         x: 1375
@@ -1803,11 +795,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_106
+      name: 33
       rect:
         serializedVersion: 2
         x: 1490
-        y: 584
+        y: 585
         width: 108
         height: 100
       alignment: 0
@@ -1824,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_107
+      name: 34
       rect:
         serializedVersion: 2
         x: 1607
@@ -1845,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_108
+      name: 36
       rect:
         serializedVersion: 2
         x: 1727
@@ -1866,12 +858,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_109
+      name: 37
       rect:
         serializedVersion: 2
         x: 1853
-        y: 584
-        width: 104
+        y: 585
+        width: 116
         height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1887,7 +879,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_110
+      name: 38
       rect:
         serializedVersion: 2
         x: 1978
@@ -1908,7 +900,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_111
+      name: 39
       rect:
         serializedVersion: 2
         x: 2105
@@ -1929,7 +921,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_112
+      name: 40
       rect:
         serializedVersion: 2
         x: 2216
@@ -1950,7 +942,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_113
+      name: 41
       rect:
         serializedVersion: 2
         x: 2327
@@ -1971,7 +963,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_114
+      name: 42
       rect:
         serializedVersion: 2
         x: 2437
@@ -1992,11 +984,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_115
+      name: 43
       rect:
         serializedVersion: 2
         x: 2534
-        y: 584
+        y: 585
         width: 69
         height: 92
       alignment: 0
@@ -2013,7 +1005,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dragones_116
+      name: 44
       rect:
         serializedVersion: 2
         x: 2614
@@ -2033,1035 +1025,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Dragones_117
-      rect:
-        serializedVersion: 2
-        x: 276
-        y: 593
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ae21f4e334453348afad45b5fa0bbae
-      internalID: -1717119102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_118
-      rect:
-        serializedVersion: 2
-        x: 1957
-        y: 585
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4eb91b426c35b245ad0e7b0e477f538
-      internalID: 1208609379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_119
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 506
-        width: 64
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a129291fd1d82443b39900dc889edbd
-      internalID: 1224825641
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_120
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 506
-        width: 63
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ceea52c348e68fd42a9010737ed88123
-      internalID: -1465733227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_121
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 501
-        width: 63
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4246aa76d41ffa344bd0e4a3a0161927
-      internalID: 1167130295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_122
-      rect:
-        serializedVersion: 2
-        x: 228
-        y: 502
-        width: 61
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d81066fd21bcbf458b6079c17e32df2
-      internalID: -858779560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_123
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 506
-        width: 63
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edbd9d88131a5b24f99c0db70f9ed47b
-      internalID: 72227828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_124
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 416
-        width: 78
-        height: 79
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89a4b5b66a1dafd438c392fdec60063d
-      internalID: -1594256625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_125
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 414
-        width: 79
-        height: 81
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34266fe3b3fcae9418014614ebefdc59
-      internalID: 1346532855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_126
-      rect:
-        serializedVersion: 2
-        x: 185
-        y: 412
-        width: 78
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e8ce4285ffa94f47ba634a1840f8f67
-      internalID: 42614371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_127
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 412
-        width: 77
-        height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abf767d992f239446b605ff5efef7e97
-      internalID: -1275631637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_128
-      rect:
-        serializedVersion: 2
-        x: 359
-        y: 414
-        width: 78
-        height: 74
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1540a60fb5d569439b9811f23d21bf4
-      internalID: 487101131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_129
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 331
-        width: 63
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ca7f3fc21ef93f4b95d8190fca28001
-      internalID: 682581209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_130
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 318
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cadadc90d37cf2479a8de2e7f044436
-      internalID: -98306544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_131
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 235
-        width: 64
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7c1be27712e9a640b90f6265a5ae401
-      internalID: -71355194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_132
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 235
-        width: 63
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50d6b203e37d7f14ab8d7dfc4121f3b8
-      internalID: 12455841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_133
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 235
-        width: 64
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b115d6761052254e8ccd777bfe3bcd0
-      internalID: -618856484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_134
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 235
-        width: 62
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 624e0b74bc28cff4a9feb488e3c6a7d6
-      internalID: -594322687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_135
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 235
-        width: 63
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28353ab3169abfe40ab92cee7dbd4a2a
-      internalID: -994060220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_136
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 160
-        width: 63
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a3844ee0c8e0b840b122f8f97674c03
-      internalID: -1090696298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_137
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 155
-        width: 64
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0f34f243c3012f4f8d92e84388872da
-      internalID: 278744512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_138
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 103
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 915e27f7857bc604d85b4d921ddea707
-      internalID: -806160971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_139
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 51
-        width: 65
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c460ddce9e27fc34a8d2025695d0f44f
-      internalID: 577869478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_140
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 103
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f67758c06d92eb944a2d8b75c0a7c31a
-      internalID: -963657507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_141
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 51
-        width: 64
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b4f178d6af0fab4baa2aaab3588e62c
-      internalID: -1796941207
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_142
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 108
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d10b8e4ba3be06468c94d9b49509323
-      internalID: -1233058639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_143
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 51
-        width: 64
-        height: 95
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d093efdf73236742824766d7cf10ec8
-      internalID: 1812673801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_144
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 108
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 393fac171229f314d81650c8e4a34e29
-      internalID: 1495806201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_145
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 51
-        width: 62
-        height: 98
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f87aa57c409013043bc4b0e017dfc873
-      internalID: 823904889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_146
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 51
-        width: 63
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9ddda8928957314784cbb2970686879
-      internalID: -804609697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_147
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 7
-        width: 35
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b83e8489bedf12498c2f86c719c06a6
-      internalID: 2081483460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_148
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 7
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6e454d7c1ff680438a4f7af3d7b2dfd
-      internalID: 668809812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_149
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 7
-        width: 36
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf82ec167c2bdaf47a0a0dde1ee1faea
-      internalID: 1822180946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_150
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 7
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19a1d7ede0b04d94092dede657d6e671
-      internalID: -495516274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_21
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 1275
-        width: 40
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 28840678081d25c4a93cf8ab457e2ae3
-      internalID: 1184120176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_22
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 1275
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65297a0ffabad5f4aa971be6a85368be
-      internalID: 971928459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_23
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 1275
-        width: 52
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83a19d77a0f2ee544ae58f201521d03c
-      internalID: 883943474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_24
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 1261
-        width: 34
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33e902a985ecfb14cb6e92b0c6069e13
-      internalID: 480850536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_25
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 1261
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 405adc2990a11ad4aaacbfd7dd1fd619
-      internalID: 1727391322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_26
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 1244
-        width: 67
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ac8e04d7f5eb3447adbb64b43195877
-      internalID: -370874502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_27
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 1242
-        width: 27
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3007d9d1dc9168f468c625aa38e84a00
-      internalID: -2025494713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_29
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 1214
-        width: 6
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8476061306effe419f62b54edb0c2fe
-      internalID: -1652996544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_30
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 1213
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb8939096da8d8a45b4fab4311a1cf7b
-      internalID: -792321629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_31
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 1215
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d91c373c1386d44f81f29210659e257
-      internalID: 769074823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_32
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 1218
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f356424d48145f541a2f063a7b63e527
-      internalID: -1707236464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_33
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 1214
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 256c2c3b7971ad943b8a89b1864aa751
-      internalID: 1078083820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_34
-      rect:
-        serializedVersion: 2
-        x: 274
-        y: 1215
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 679f2cdd2cc3c844fbcb5e6f77463d4b
-      internalID: -1398562154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_35
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 1218
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d50dca60845c8c43af88826c5e2532e
-      internalID: -1598758239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragones_36
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 1214
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3930336c41bba24289de463f293149a
-      internalID: 1896707355
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3073,31 +1036,54 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      1: 1187393104
+      10: -1872454874
+      11: 303162847
+      12: 548570494
+      13: 1315378448
+      14: 1432101408
+      15: -318338948
+      16: -1380490579
+      17: 909258592
+      18: -1515355997
+      19: -318426717
+      2: -1407793851
+      20: 1583015037
+      21: -1684154103
+      22: 1130611086
+      23: 537644722
+      24: 483316860
+      25: 1584002621
+      26: 176295054
+      27: -1735665667
+      28: -331509052
+      29: -1148255724
+      3: -127743892
+      30: -1779852428
+      31: -116068387
+      32: 738329253
+      33: -1634619565
+      34: -475240693
+      36: -807409648
+      37: 806623520
+      38: 537646698
+      39: 1738415417
+      4: 1219079150
+      40: -429465944
+      41: -3061292
+      42: -72030338
+      43: -661260511
+      44: 349922822
+      5: 2085052381
+      6: 714930825
+      7: -1763486258
+      8: 773693778
+      9: -1257479114
       Dragones_0: 967586739
       Dragones_1: 1569404486
-      Dragones_10: 714930825
-      Dragones_100: -1735665667
-      Dragones_101: -331509052
-      Dragones_102: -1148255724
-      Dragones_103: -1779852428
-      Dragones_104: -116068387
-      Dragones_105: 738329253
-      Dragones_106: -1634619565
-      Dragones_107: -475240693
-      Dragones_108: -807409648
-      Dragones_109: 806623520
-      Dragones_11: -1763486258
-      Dragones_110: 537646698
-      Dragones_111: 1738415417
-      Dragones_112: -429465944
-      Dragones_113: -3061292
-      Dragones_114: -72030338
-      Dragones_115: -661260511
-      Dragones_116: 349922822
       Dragones_117: -1717119102
       Dragones_118: 1208609379
       Dragones_119: 1224825641
-      Dragones_12: 773693778
       Dragones_120: -1465733227
       Dragones_121: 1167130295
       Dragones_122: -858779560
@@ -3108,7 +1094,6 @@ TextureImporter:
       Dragones_127: -1275631637
       Dragones_128: 487101131
       Dragones_129: 682581209
-      Dragones_13: -1257479114
       Dragones_130: -98306544
       Dragones_131: -71355194
       Dragones_132: 12455841
@@ -3119,7 +1104,6 @@ TextureImporter:
       Dragones_137: 278744512
       Dragones_138: -806160971
       Dragones_139: 577869478
-      Dragones_14: -1872454874
       Dragones_140: -963657507
       Dragones_141: -1796941207
       Dragones_142: -1233058639
@@ -3169,7 +1153,6 @@ TextureImporter:
       Dragones_47: 1298642480
       Dragones_48: -1360497132
       Dragones_49: -1380806106
-      Dragones_5: 1187393104
       Dragones_50: -2101627404
       Dragones_51: 873588994
       Dragones_52: 1011986370
@@ -3180,7 +1163,6 @@ TextureImporter:
       Dragones_57: 1515731010
       Dragones_58: -11289193
       Dragones_59: 2016971924
-      Dragones_6: -1407793851
       Dragones_60: -1367503654
       Dragones_61: 421507156
       Dragones_62: 845629665
@@ -3191,18 +1173,9 @@ TextureImporter:
       Dragones_67: -1212070619
       Dragones_68: -1612932828
       Dragones_69: -2017196173
-      Dragones_7: -127743892
-      Dragones_70: 303162847
-      Dragones_71: 548570494
-      Dragones_72: 1315378448
-      Dragones_73: 1432101408
-      Dragones_74: -318338948
-      Dragones_75: -1380490579
       Dragones_76: -7416553
       Dragones_77: 1624460500
-      Dragones_78: 909258592
       Dragones_79: -396663857
-      Dragones_8: 1219079150
       Dragones_80: 735207700
       Dragones_81: 723387625
       Dragones_82: -344242268
@@ -3213,17 +1186,7 @@ TextureImporter:
       Dragones_87: 1513813319
       Dragones_88: -1420413057
       Dragones_89: -782155735
-      Dragones_9: 2085052381
       Dragones_90: 1272959381
-      Dragones_91: -1515355997
-      Dragones_92: -318426717
-      Dragones_93: 1583015037
-      Dragones_94: -1684154103
-      Dragones_95: 1130611086
-      Dragones_96: 537644722
-      Dragones_97: 483316860
-      Dragones_98: 1584002621
-      Dragones_99: 176295054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
