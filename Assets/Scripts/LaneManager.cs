@@ -6,7 +6,7 @@ public class LaneManager : MonoBehaviour
     public static LaneManager Instance;
     public static Creacion_Casillas creacion_casillas;
 
-    private List<Zombies>[] zombiesPerLane;
+    private List<Dragones>[] dragonesPorLinea;
 
     private void Start()
     {
@@ -16,27 +16,27 @@ public class LaneManager : MonoBehaviour
         //for (int i = 0; i < creacion_casillas.rows; i++)
             //zombiesPerLane[i] = new List<Zombie>();
 
-        zombiesPerLane = new List<Zombies>[5];
+        dragonesPorLinea = new List<Dragones>[5];
         for (int i = 0; i < 5; i++)
-            zombiesPerLane[i] = new List<Zombies>();
+            dragonesPorLinea[i] = new List<Dragones>();
     }
 
-    public void RegisterZombie(Zombies z, int lane)
+    public void RegistrarDragon(Dragones z, int lane)
     {
-        zombiesPerLane[lane].Add(z);
+        dragonesPorLinea[lane].Add(z);
     }
 
-    public void RemoveZombie(Zombies z, int lane)
+    public void QuitarDragon(Dragones z, int lane)
     {
-        zombiesPerLane[lane].Remove(z);
+        dragonesPorLinea[lane].Remove(z);
     }
 
 
-    //hacer booleano para saber si hay zombies en la fila
-    public Zombies GetFirstZombie(int lane)
+    //hacer booleano para saber si hay dragones en la fila
+    public Dragones ObtenerPrimerDragon(int lane)
     {
-        if (zombiesPerLane[lane].Count == 0) return null;
+        if (dragonesPorLinea[lane].Count == 0) return null;
 
-        return zombiesPerLane[lane][0];
+        return dragonesPorLinea[lane][0];
     }
 }

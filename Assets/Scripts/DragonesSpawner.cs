@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ZombieSpawner : MonoBehaviour
+public class DragonesSpawner : MonoBehaviour
 {
     public GameObject zombiePrefab;
     private Transform[] laneSpawnPoints; // uno por fila
@@ -42,6 +42,6 @@ public class ZombieSpawner : MonoBehaviour
     public void SpawnZombie(int lane)
     {
         GameObject z = Instantiate(zombiePrefab, laneSpawnPoints[lane].position, Quaternion.identity);
-        z.GetComponent<Zombies>().SetLane(lane);
+        z.GetComponent<Dragones>().SetLane(lane);
     }
 }

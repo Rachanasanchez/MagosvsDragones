@@ -35,7 +35,7 @@ public class Click_Casilla : MonoBehaviour
             return;
         }
 
-        Debug.Log($"Click en {name} | Coste: {cost}");
+        //Debug.Log($"Click en {name} | Coste: {cost}");
     }
 
     public void SetOccupied(bool value)
@@ -56,7 +56,7 @@ public class Click_Casilla : MonoBehaviour
     public void Ocupar(Magos mago)
     {
         magoEnCasilla = mago;
-        isOccupied = true;
+        SetOccupied(true);
     }
 
     public void Liberar()

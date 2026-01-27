@@ -44,9 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2822fa0a539603e4f8925725d77346e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  celdaClara: {fileID: 21300000, guid: 381d2869a2e783147a9eb8ad2bf86b56, type: 3}
+  celdaOscura: {fileID: 21300000, guid: cb952ee2f7c58564f878abe6e28f2e14, type: 3}
   cellPrefab: {fileID: 2494567416105840156, guid: f4391ffef20a59d4ba3792084a868e76, type: 3}
   rows: 5
   columns: 9
-  spacingX: 1.6
-  spacingY: 1.6
+  spacingX: 1.1
+  spacingY: 1.1
   centerGrid: 1
+  espacio: 5

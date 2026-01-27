@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class PlantPlacementManager : MonoBehaviour
+public class MagosPlacementManager : MonoBehaviour
 {
-    public static PlantPlacementManager Instance { get; private set; }
+    public static MagosPlacementManager Instance { get; private set; }
 
     [Header("Opcional")]
     [SerializeField] private KeyCode cancelKey = KeyCode.Escape;
 
-    private Camera cam;
-    private GameObject draggingPlant;
-    private int draggingCost;
+    private Camera camara;
+    private GameObject magoSeleccionado;
+    private int costeSeleccion;
 
     private void Awake()
     {
@@ -20,28 +20,28 @@ public class PlantPlacementManager : MonoBehaviour
         }
         Instance = this;
 
-        cam = Camera.main;
-        if (cam == null)
+        camara = Camera.main;
+        if (camara == null)
             Debug.LogError("PlantPlacementManager: No existe Camera.main (tag MainCamera).");
     }
 
-    public void BeginPlacement(GameObject plantPrefab, int coste)
+    public void BeginPlacement(GameObject magoPrefab, int coste)
     {
-        // Si ya hay una planta “en mano”, la reemplazamos
-        if (draggingPlant != null)
-            Destroy(draggingPlant);
+        // Si ya hay un mago “en mano”, la reemplazamos
+        if (magoSeleccionado != null)
+            Destroy(magoSeleccionado);
 
-        draggingPlant = Instantiate(plantPrefab);
-        draggingPlant.name = plantPrefab.name + "_Dragging";
-        draggingCost = coste;
+        magoSeleccionado = Instantiate(magoPrefab);
+        magoSeleccionado.name = magoPrefab.name + "_Dragging";
+        costeSeleccion = coste;
 
     }
 
     private void Update()
     {
-        if (draggingPlant == null) return;
+        if (magoSeleccionado == null) return;
 
-        FollowMouse(draggingPlant);
+        FollowMouse(magoSeleccionado);
 
         if (Input.GetKeyDown(cancelKey))
         {
@@ -59,8 +59,8 @@ public class PlantPlacementManager : MonoBehaviour
     private void FollowMouse(GameObject obj)
     {
         Vector3 mouse = Input.mousePosition;
-        mouse.z = -cam.transform.position.z; // para 2D ortho suele funcionar bien
-        Vector3 world = cam.ScreenToWorldPoint(mouse);
+        mouse.z = -camara.transform.position.z; // para 2D ortho suele funcionar bien
+        Vector3 world = camara.ScreenToWorldPoint(mouse);
         world.z = 0f;
 
         obj.transform.position = world;
@@ -68,7 +68,7 @@ public class PlantPlacementManager : MonoBehaviour
 
     private void TryPlaceOnCell()
     {
-        Vector2 worldPoint = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 worldPoint = camara.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
 
         if (!hit.collider)
@@ -96,27 +96,27 @@ public class PlantPlacementManager : MonoBehaviour
             return;
         }        
 
-        PlayerDataManager.Instance.SpendSun(draggingCost);
+        PlayerDataManager.Instance.SpendSun(costeSeleccion);
 
         // Colocar: hija de la celda y centrada
-        draggingPlant.transform.SetParent(cell.transform, worldPositionStays: false);
-        draggingPlant.transform.localPosition = Vector3.zero;
+        magoSeleccionado.transform.SetParent(cell.transform, worldPositionStays: false);
+        magoSeleccionado.transform.localPosition = Vector3.zero;
 
         // settear todo del mago
-        Magos mago = draggingPlant.GetComponent<Magos>();
+        Magos mago = magoSeleccionado.GetComponent<Magos>();
         mago.Initialize(cell);
 
         // OJO: ocupa la casilla guardando referencia al mago
         cell.Ocupar(mago);
 
-        draggingPlant = null; // ya no estamos colocando
+        magoSeleccionado = null; // ya no estamos colocando
     }
 
     private void CancelPlacement()
     {
-        if (draggingPlant != null)
-            Destroy(draggingPlant);
+        if (magoSeleccionado != null)
+            Destroy(magoSeleccionado);
 
-        draggingPlant = null;
+        magoSeleccionado = null;
     }
 }

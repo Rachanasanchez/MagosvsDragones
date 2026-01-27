@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class Zombies : MonoBehaviour
+public class Dragones : MonoBehaviour
 {
-    public float speed = 1f;
-    public float health = 5f;
-    public float attack = 5f;
+    public float speed;
+    public float health;
+    public float attack;
     public int lane;
 
     public void SetLane(int l)
     {
         lane = l;
-        LaneManager.Instance.RegisterZombie(this, lane);
+        LaneManager.Instance.RegistrarDragon(this, lane);
     }
    
     public void TakeDamage(float dmg)
@@ -28,7 +28,7 @@ public class Zombies : MonoBehaviour
 
     private void OnDestroy()
     {
-        LaneManager.Instance.RemoveZombie(this, lane);
+        LaneManager.Instance.QuitarDragon(this, lane);
     }
 
 }

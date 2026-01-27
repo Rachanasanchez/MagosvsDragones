@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Dragon_Electrico : Zombies
+public class Dragon_Electrico : Dragones
 {
     private Click_Casilla targetCell;
 
@@ -49,27 +49,27 @@ public class Dragon_Electrico : Zombies
         }
     }
 
-    public void Hacer_Dano_Mago()
-{
-    if (targetCell == null || !targetCell.isOccupied) return;
-
-    Magos mago = targetCell.magoEnCasilla;
-
-    // por si quedó desincronizado
-    if (mago == null)
+    public void Hacer_Dano()
     {
-        targetCell.Liberar();
-        targetCell = null;
-        return;
+        if (targetCell == null || !targetCell.isOccupied) return;
+
+        Magos mago = targetCell.magoEnCasilla;
+
+        // por si quedó desincronizado
+        if (mago == null)
+        {
+            targetCell.Liberar();
+            targetCell = null;
+            return;
+        }
+
+        // usa el ataque del zombie (ya lo tienes en Zombies.cs)
+        mago.TakeDamage(attack);
+
+        // si murió, Magos.Die() libera la casilla
+        if (!targetCell.isOccupied)
+            targetCell = null;
     }
-
-    // usa el ataque del zombie (ya lo tienes en Zombies.cs)
-    mago.TakeDamage(attack);
-
-    // si murió, Magos.Die() libera la casilla
-    if (!targetCell.isOccupied)
-        targetCell = null;
-}
 
 
     public void Eliminar_Al_Mago()

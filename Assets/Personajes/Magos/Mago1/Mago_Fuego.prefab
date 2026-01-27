@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7940014299237230239}
   - component: {fileID: 5880080895842593516}
   m_Layer: 0
-  m_Name: Mago_Real
+  m_Name: Mago_Fuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lane: 0
   currentCell: {fileID: 0}
-  health: 5
-  canAttack: 0
-  shootCooldown: 1.5
-  damage: 0
+  vida: 5
+  puedeAtacar: 0
+  dano: 1

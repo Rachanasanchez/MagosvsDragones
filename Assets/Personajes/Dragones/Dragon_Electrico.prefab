@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6987185768640997253}
   - component: {fileID: 7940014299237230239}
   - component: {fileID: 8375928133583526188}
-  - component: {fileID: 2062748146049396294}
   m_Layer: 0
   m_Name: Dragon_Electrico
   m_TagString: Untagged
@@ -122,22 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   health: 5
-  attack: 5
+  attack: 1
   lane: 0
   attackRange: 1
---- !u!114 &2062748146049396294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3118328225198995877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1842551e98624408360bc1e5a45122, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  health: 5
-  attack: 5
-  lane: 0

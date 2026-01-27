@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Mago_Fuego : Magos
 {
-    public float shootCooldown = 1f;
-    public int damage;
-    private Zombies target;
+    private Dragones target;
     private void Update()
     {
-        target = LaneManager.Instance.GetFirstZombie(lane);
+        target = LaneManager.Instance.ObtenerPrimerDragon(lane);
 
-        if(target == null || canAttack == false)
+        if(target == null || puedeAtacar == false)
         {
             gameObject.GetComponent<Animator>().SetBool("Atacar", false);
         }
@@ -25,7 +23,7 @@ public class Mago_Fuego : Magos
     {
         if(target != null)
         {
-            target.TakeDamage(damage);
+            target.TakeDamage(dano);
 
         }
         // aquí luego instancias el proyectil

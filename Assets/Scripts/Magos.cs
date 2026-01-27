@@ -7,21 +7,22 @@ public class Magos : MonoBehaviour
     public int lane;
     public Click_Casilla currentCell;
 
-    public float health = 5f;
-    public bool canAttack;
+    public float vida = 5f;
+    public bool puedeAtacar;
+    public int dano;
 
     public void Initialize(Click_Casilla cell)
     {
         currentCell = cell;
         lane = cell.Fila;
-        canAttack = true;
+        puedeAtacar = true;
     }
 
     public void TakeDamage(float dmg)
     {
-        health -= dmg;
+        vida -= dmg;
 
-        if (health <= 0)
+        if (vida <= 0)
             Die();
     }
 

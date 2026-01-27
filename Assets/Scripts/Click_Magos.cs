@@ -15,7 +15,7 @@ public class Click_Magos : MonoBehaviour
 
         if (PlayerDataManager.Instance.HasEnoughSun(magoPrefab.cost))
         {
-            PlantPlacementManager.Instance.BeginPlacement(magoPrefab.prefab, magoPrefab.cost);
+            MagosPlacementManager.Instance.BeginPlacement(magoPrefab.prefab, magoPrefab.cost);
             return;
         }
         else
