@@ -27,7 +27,12 @@ public class Magos : MonoBehaviour
 
     protected void Die()
     {
-        //currentCell.RemovePlant();
+        if (currentCell != null)
+        {
+            currentCell.Liberar();   
+            currentCell = null;
+        }
+
         Destroy(gameObject);
     }
 }

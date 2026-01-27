@@ -102,10 +102,12 @@ public class PlantPlacementManager : MonoBehaviour
         draggingPlant.transform.SetParent(cell.transform, worldPositionStays: false);
         draggingPlant.transform.localPosition = Vector3.zero;
 
-        cell.SetOccupied(true);
+        // settear todo del mago
+        Magos mago = draggingPlant.GetComponent<Magos>();
+        mago.Initialize(cell);
 
-        //settear todo del mago
-        draggingPlant.GetComponent<Magos>().Initialize(cell);
+        // OJO: ocupa la casilla guardando referencia al mago
+        cell.Ocupar(mago);
 
         draggingPlant = null; // ya no estamos colocando
     }

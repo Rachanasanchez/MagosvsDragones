@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Creacion_Casillas : MonoBehaviour
 {
+    [Header("Sprites de la casilla")]
+    public Sprite celdaClara;
+    public Sprite celdaOscura;
+
     [Header("Prefab de la casilla")]
     public GameObject cellPrefab;
 
@@ -62,6 +66,18 @@ public class Creacion_Casillas : MonoBehaviour
                                  + new Vector3(col * spacingX, -row * spacingY, 0f);
 
                 GameObject cellObj = Instantiate(cellPrefab, position, Quaternion.identity, container);
+
+                SpriteRenderer sr = cellObj.GetComponentInChildren<SpriteRenderer>();
+
+                if ((row + col) % 2 == 0)
+                {
+                    sr.sprite = celdaClara;
+                }
+                else
+                {
+                    sr.sprite = celdaOscura;
+                }
+
                 cellObj.name = $"Cell_{row}_{col}";
 
                 Click_Casilla casilla = cellObj.GetComponent<Click_Casilla>();

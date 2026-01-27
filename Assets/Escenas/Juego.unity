@@ -573,6 +573,18 @@ PrefabInstance:
       propertyPath: offset.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5631044840778586289, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
+      propertyPath: celdaClara
+      value: 
+      objectReference: {fileID: 21300000, guid: 381d2869a2e783147a9eb8ad2bf86b56, type: 3}
+    - target: {fileID: 5631044840778586289, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
+      propertyPath: cellPrefab
+      value: 
+      objectReference: {fileID: 2494567416105840156, guid: f4391ffef20a59d4ba3792084a868e76, type: 3}
+    - target: {fileID: 5631044840778586289, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
+      propertyPath: celdaOscura
+      value: 
+      objectReference: {fileID: 21300000, guid: cb952ee2f7c58564f878abe6e28f2e14, type: 3}
     - target: {fileID: 7818691276960783899, guid: da081b68dbd8d104b8b0854d3edd7a01, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
