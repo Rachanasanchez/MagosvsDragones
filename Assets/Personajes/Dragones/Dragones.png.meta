@@ -1025,6 +1025,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 45
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1070
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ff9d024bda18b4dbf8e6b715f25e87
+      internalID: 967586739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 46
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1072
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253233bd888dadd4380368994f6a1c90
+      internalID: 1569404486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1068
+        width: 75
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63ad02b7e76c5a4d839919eeb68b6f9
+      internalID: 1097342277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 48
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1070
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ef37e3f02172f42a3b36251e6f74af
+      internalID: -647851510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 49
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1074
+        width: 81
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76058ea93943cdf4b9ddebd080beedd9
+      internalID: -1040725779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1074,13 +1179,16 @@ TextureImporter:
       42: -72030338
       43: -661260511
       44: 349922822
+      45: 967586739
+      46: 1569404486
+      47: 1097342277
+      48: -647851510
+      49: -1040725779
       5: 2085052381
       6: 714930825
       7: -1763486258
       8: 773693778
       9: -1257479114
-      Dragones_0: 967586739
-      Dragones_1: 1569404486
       Dragones_117: -1717119102
       Dragones_118: 1208609379
       Dragones_119: 1224825641
@@ -1120,7 +1228,6 @@ TextureImporter:
       Dragones_17: -59909134
       Dragones_18: -1536573242
       Dragones_19: -1546178225
-      Dragones_2: 1097342277
       Dragones_20: -466172398
       Dragones_21: 1184120176
       Dragones_22: 971928459
@@ -1131,7 +1238,6 @@ TextureImporter:
       Dragones_27: -2025494713
       Dragones_28: 216973594
       Dragones_29: -1652996544
-      Dragones_3: -647851510
       Dragones_30: -792321629
       Dragones_31: 769074823
       Dragones_32: -1707236464
@@ -1142,7 +1248,6 @@ TextureImporter:
       Dragones_37: 532170392
       Dragones_38: 1561817888
       Dragones_39: 1609501929
-      Dragones_4: -1040725779
       Dragones_40: -987699143
       Dragones_41: -1323465506
       Dragones_42: 1941507363
