@@ -10,6 +10,8 @@ public class Magos : MonoBehaviour
     public float vida = 5f;
     public bool puedeAtacar;
     public int dano;
+    public AudioClip audioDisparo;
+    public AudioSource audioSource;
 
     public void Initialize(Click_Casilla cell)
     {

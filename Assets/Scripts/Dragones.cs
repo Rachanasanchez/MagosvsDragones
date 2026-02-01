@@ -6,6 +6,9 @@ public class Dragones : MonoBehaviour
     public float health;
     public float attack;
     public int lane;
+    public AudioClip audioAtaque;
+    public AudioClip audioVolar;
+    public AudioSource audioSource;
 
     public void SetLane(int l)
     {

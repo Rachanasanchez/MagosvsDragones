@@ -43,7 +43,7 @@ public class Dragon_Electrico : Dragones
         }
         else
         {
-            Debug.Log("Estoy en rango y pongo Atacar = true");
+            //Debug.Log("Estoy en rango y pongo Atacar = true");
             // Frente a la planta -> atacar
             gameObject.GetComponent<Animator>().SetBool("Atacar", true);
         }
@@ -55,7 +55,6 @@ public class Dragon_Electrico : Dragones
 
         Magos mago = targetCell.magoEnCasilla;
 
-        // por si quedó desincronizado
         if (mago == null)
         {
             targetCell.Liberar();
@@ -63,18 +62,17 @@ public class Dragon_Electrico : Dragones
             return;
         }
 
-        // usa el ataque del zombie (ya lo tienes en Zombies.cs)
         mago.TakeDamage(attack);
+        audioSource.PlayOneShot(audioAtaque);
 
-        // si murió, Magos.Die() libera la casilla
         if (!targetCell.isOccupied)
             targetCell = null;
     }
 
 
-    public void Eliminar_Al_Mago()
+    public void sonidoVolar()
     {
-
+        audioSource.PlayOneShot(audioVolar);
     }
 
     // Devuelve la primera celda de la línea que tenga planta

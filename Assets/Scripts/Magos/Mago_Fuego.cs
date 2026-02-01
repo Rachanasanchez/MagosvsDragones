@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Mago_Fuego : Magos
 {
+    public GameObject bolaFuego;
     private Dragones target;
+
     private void Update()
     {
         target = LaneManager.Instance.ObtenerPrimerDragon(lane);
@@ -23,10 +25,11 @@ public class Mago_Fuego : Magos
     {
         if(target != null)
         {
-            target.TakeDamage(dano);
+            audioSource.PlayOneShot(audioDisparo);
+            Instantiate(bolaFuego, transform.position, transform.rotation);
+            //target.TakeDamage(dano);
 
         }
-        // aquí luego instancias el proyectil
     }
 
 }
