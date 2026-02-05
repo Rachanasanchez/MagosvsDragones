@@ -5,7 +5,7 @@ public class PlayerDataManager : MonoBehaviour
     public static PlayerDataManager Instance { get; private set; }
 
     [Header("Sun Settings")]
-    [SerializeField] private int startingSun = 50;
+    [SerializeField] private int startingSun = 0;
 
     public int currentSun;
 
