@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Creacion_Casillas : MonoBehaviour
 {
+    public static GridManager Instance;
+    public static Creacion_Casillas Instancia;
+
     [Header("Sprites de la casilla")]
     public Sprite celdaClara;
     public Sprite celdaOscura;
@@ -25,6 +28,11 @@ public class Creacion_Casillas : MonoBehaviour
 
     private Transform container;
 
+    private void Awake()
+    {
+        Instancia = this;
+    }
+
     private void Start()
     {
         CreateContainer();
@@ -34,6 +42,11 @@ public class Creacion_Casillas : MonoBehaviour
         SpawnGrid();
     }
 
+
+    public int GetRows()
+    {
+        return rows;
+    }
 
     private void CreateContainer()
     {

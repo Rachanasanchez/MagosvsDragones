@@ -4,7 +4,6 @@ using UnityEngine;
 public class LaneManager : MonoBehaviour
 {
     public static LaneManager Instance;
-    public static Creacion_Casillas creacion_casillas;
 
     private List<Dragones>[] dragonesPorLinea;
 
@@ -12,11 +11,10 @@ public class LaneManager : MonoBehaviour
     {
         Instance = this;
 
-        //zombiesPerLane = new List<Zombie>[creacion_casillas.rows];
-        //for (int i = 0; i < creacion_casillas.rows; i++)
-            //zombiesPerLane[i] = new List<Zombie>();
+        dragonesPorLinea = new List<Dragones>[Creacion_Casillas.Instancia.GetRows()];
+        for (int i = 0; i < Creacion_Casillas.Instancia.GetRows(); i++)
+            dragonesPorLinea[i] = new List<Dragones>();
 
-        dragonesPorLinea = new List<Dragones>[5];
         for (int i = 0; i < 5; i++)
             dragonesPorLinea[i] = new List<Dragones>();
     }

@@ -15,6 +15,10 @@ public class GeneradorCristales : MonoBehaviour
     [Header("Desaparición")]
     [SerializeField] private float segundosParaDesaparecerEnSuelo = 6f;
 
+    [Header("Imagenes")]
+    [SerializeField] private Sprite[] listaSprites;
+
+
     private void Start()
     {
         InvokeRepeating(nameof(GenerarCristal), 1f, tiempoEntreCristales);
@@ -28,8 +32,12 @@ public class GeneradorCristales : MonoBehaviour
             return;
         }
 
+
         Vector3 pos = new Vector3(Random.Range(minX, maxX), alturaSpawn, 0f);
         GameObject cristal = Instantiate(prefabCristal, pos, Quaternion.identity);
+
+        SpriteRenderer sr = cristal.GetComponent<SpriteRenderer>();
+        sr.sprite = listaSprites[Random.Range(0, listaSprites.Length)];
 
         // Le añadimos el comportamiento de desaparecer al tocar el suelo
         var auto = cristal.GetComponent<CristalAutoDestruir>();

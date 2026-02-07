@@ -25,13 +25,13 @@ public class Click_Casilla : MonoBehaviour
     {
         if (!isAvailable)
         {
-            Debug.Log($"{name} NO disponible");
+            //Debug.Log($"{name} NO disponible");
             return;
         }
 
         if (isOccupied)
         {
-            Debug.Log($"{name} ya está OCUPADA");
+            //Debug.Log($"{name} ya está OCUPADA");
             return;
         }
 

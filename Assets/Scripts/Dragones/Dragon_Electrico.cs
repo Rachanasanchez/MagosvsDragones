@@ -22,12 +22,12 @@ public class Dragon_Electrico : Dragones
         else
         {
             // No hay planta -> caminar
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
-            gameObject.GetComponent<Animator>().SetBool("Atacar", false);
+            WalkForward();
         }
     }
 
     // Movimiento y ataque
+    
     private void AttackBehavior()
     {
         Vector3 targetPos = targetCell.transform.position;
@@ -48,6 +48,56 @@ public class Dragon_Electrico : Dragones
             gameObject.GetComponent<Animator>().SetBool("Atacar", true);
         }
     }
+
+    /*
+    private void AttackBehavior()
+    {
+        if (targetCell == null)
+        {
+            WalkForward();
+            return;
+        }
+
+        Vector3 targetPos = targetCell.transform.position;
+
+        // Si la he pasado, busco otra PERO SIGO EJECUTANDO
+        if (transform.position.x < targetPos.x)
+        {
+            targetCell = GetNextCellWithPlant();
+
+            if (targetCell == null)
+            {
+                WalkForward();
+                return;
+            }
+
+            targetPos = targetCell.transform.position;
+        }
+
+        float distance = Vector3.Distance(transform.position, targetPos);
+
+        if (distance > attackRange)
+        {
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                new Vector3(targetPos.x, transform.position.y, transform.position.z),
+                speed * Time.deltaTime
+            );
+
+            GetComponent<Animator>().SetBool("Atacar", false);
+        }
+        else
+        {
+            GetComponent<Animator>().SetBool("Atacar", true);
+        }
+    }
+    */
+    private void WalkForward()
+    {
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        GetComponent<Animator>().SetBool("Atacar", false);
+    }
+
 
     public void Hacer_Dano()
     {
@@ -83,12 +133,18 @@ public class Dragon_Electrico : Dragones
         for (int col = 0; col < columns; col++)
         {
             Click_Casilla cell = GridManager.Instance.grid[lane, col];
+
             if (cell != null && cell.isOccupied)
             {
-                return cell;
+                // SOLO si está por delante del dragón
+                if (cell.transform.position.x < transform.position.x)
+                {
+                    return cell;
+                }
             }
         }
 
-        return null; // No hay plantas en la línea
+        return null;
     }
+
 }

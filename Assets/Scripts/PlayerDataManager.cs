@@ -41,19 +41,19 @@ public class PlayerDataManager : MonoBehaviour
             return false;
 
         currentSun -= amount;
-        Debug.Log($"Soles gastados: {amount} | Restantes: {currentSun}");
+        //Debug.Log($"Soles gastados: {amount} | Restantes: {currentSun}");
         return true;
     }
 
     public void AddSun(int amount)
     {
         currentSun += amount;
-        Debug.Log($"Soles añadidos: {amount} | Total: {currentSun}");
+        //Debug.Log($"Soles añadidos: {amount} | Total: {currentSun}");
     }
 
     public void SetSun(int amount)
     {
         currentSun = Mathf.Max(0, amount);
-        Debug.Log($"Soles fijados a: {currentSun}");
+        //Debug.Log($"Soles fijados a: {currentSun}");
     }
 }
