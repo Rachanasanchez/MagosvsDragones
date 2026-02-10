@@ -2,3 +2,15 @@ Poner el contador de soles en pantalla y que se actualice cuando pongas un mago.
 Script que salgan los cristales, que les puedas hacer click y se sumen a tu contador
 
 --NO - Manager de spawn zombis. Ejemplo: 15 zombis en 2 minutos (NO HACER)
+
+
+
+
+
+*Cuando los dragones lleguen al final del tablero ¡HAS PERDIDO! y te dara la opcion de volver a intentar o salir 
+
+*Menu de inicio
+
+*Pausa de juego 
+
+*Nivel 2

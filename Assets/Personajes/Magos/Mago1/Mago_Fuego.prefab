@@ -122,8 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lane: 0
   currentCell: {fileID: 0}
-  vida: 5
-  puedeAtacar: 0
+  vida: 15
+  puedeAtacar: 1
   dano: 1
   audioDisparo: {fileID: 8300000, guid: 66d74b3534ba3c34fadd76656359eb81, type: 3}
   audioSource: {fileID: 3491534701219276339}
