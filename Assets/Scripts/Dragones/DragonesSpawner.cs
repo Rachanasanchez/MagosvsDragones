@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class DragonesSpawner : MonoBehaviour
 {
-    public GameObject dragonPrefab;
+    public GameObject[] dragonesPrefab;
     private Transform[] laneSpawnPoints;
     private int lineas;
 
-    public int tiempoDeEspera ;
-    public int segundosOleada ;
-    public int cantidadDragones ;
+    public int tiempoDeEspera;
+    public int segundosOleada;
+    public int cantidadDragones;
     public int cantidadFinal;
 
 
@@ -75,7 +75,9 @@ public class DragonesSpawner : MonoBehaviour
 
     public void SpawnDragon(int numeroLinea)
     {
-        GameObject z = Instantiate(dragonPrefab, laneSpawnPoints[numeroLinea].position, Quaternion.identity);
-        z.GetComponent<Dragones>().SetLane(numeroLinea);
+        int dragonElegido = Random.Range(0, dragonesPrefab.Length);
+
+        GameObject dragon = Instantiate(dragonesPrefab[dragonElegido], laneSpawnPoints[numeroLinea].position, Quaternion.identity);
+        dragon.GetComponent<Dragones>().SetLane(numeroLinea);
     }
 }

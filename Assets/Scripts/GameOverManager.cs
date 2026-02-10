@@ -15,9 +15,23 @@ public class GameOverManager : MonoBehaviour
 
     void Start()
     {
-        if (panelGameOver != null) panelGameOver.SetActive(false);
+        if (panelGameOver != null)
+        {
+            panelGameOver.SetActive(false);
+        }
+
         Time.timeScale = 1f;
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Dragon"))
+        {
+            Lose();
+        }
+    }
+
 
     public void Lose()
     {
@@ -34,12 +48,4 @@ public class GameOverManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void Quit()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
-    }
 }

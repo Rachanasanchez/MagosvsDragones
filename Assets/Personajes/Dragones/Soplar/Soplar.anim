@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blow
+  m_Name: Soplar
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,7 +23,7 @@ AnimationClip:
     - time: 0
       value: {fileID: 967586739, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
     - time: 0.083333336
-      value: {fileID: 1569404486, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
+      value: {fileID: 967586739, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
     - time: 0.16666667
       value: {fileID: 1097342277, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
     - time: 0.25
@@ -53,7 +53,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 967586739, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
-    - {fileID: 1569404486, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
+    - {fileID: 967586739, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
     - {fileID: 1097342277, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
     - {fileID: -647851510, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
     - {fileID: -1040725779, guid: 4fe7eae4047108a4790ca297f94774b2, type: 3}
@@ -81,4 +81,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.25
+    functionName: Soplar
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

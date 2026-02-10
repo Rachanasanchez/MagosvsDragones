@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Suelo
-  - cristal
+  - Dragon
+  - Cristal
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Dragones
   - Cristal
   - Suelo
-  - 
+  - GameOver
   - 
   - 
   - 

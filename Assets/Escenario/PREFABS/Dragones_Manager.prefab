@@ -57,7 +57,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c84b0a56b61dd1459bf03160ffedcc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragonPrefab: {fileID: 3118328225198995877, guid: 22a3fa5c8b2141b4ea70423fc582b8df, type: 3}
+  dragonesPrefab:
+  - {fileID: 3118328225198995877, guid: 22a3fa5c8b2141b4ea70423fc582b8df, type: 3}
+  - {fileID: 3235512896909162955, guid: 2c1317cc7f1d2fd4497529a1d20f0d32, type: 3}
   tiempoDeEspera: 2
   segundosOleada: 1
   cantidadDragones: 1
