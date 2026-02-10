@@ -1,5 +1,4 @@
-Poner el contador de soles en pantalla y que se actualice cuando pongas un mago.
-Script que salgan los cristales, que les puedas hacer click y se sumen a tu contador
+Controlar vida/ataque de los personajes
 
 --NO - Manager de spawn zombis. Ejemplo: 15 zombis en 2 minutos (NO HACER)
 
