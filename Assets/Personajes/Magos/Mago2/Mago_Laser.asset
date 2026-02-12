@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Mago_Laser
   m_EditorClassIdentifier: 
   plantType: 0
-  prefab: {fileID: 8850561547377994373, guid: 00d8fa6231ef0dd4aa3b78e4acc454b0, type: 3}
+  prefab: {fileID: 639728904604839797, guid: 00d8fa6231ef0dd4aa3b78e4acc454b0, type: 3}
   cost: 100
