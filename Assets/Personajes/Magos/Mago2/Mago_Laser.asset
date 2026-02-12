@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f50de852cd963874e94a0e1918b8634e, type: 3}
-  m_Name: MagoSO
+  m_Name: Mago_Laser
   m_EditorClassIdentifier: 
   plantType: 0
-  prefab: {fileID: 0}
+  prefab: {fileID: 8850561547377994373, guid: 00d8fa6231ef0dd4aa3b78e4acc454b0, type: 3}
   cost: 100

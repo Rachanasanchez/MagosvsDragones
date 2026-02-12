@@ -24,7 +24,7 @@ public class Click_Cristales : MonoBehaviour
         if (hit.collider == null) return;
 
         // Si el objeto clicado tiene la tag "Cristal", lo recogemos
-        if (hit.collider.CompareTag("cristal"))
+        if (hit.collider.CompareTag("Cristal"))
         {
             PlayerDataManager.Instance.AddSun(valorPorCristal);
             Destroy(hit.collider.gameObject);
