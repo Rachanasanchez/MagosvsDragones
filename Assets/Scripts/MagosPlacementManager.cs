@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MagosPlacementManager : MonoBehaviour
 {
     public static MagosPlacementManager Instance { get; private set; }
 
     [Header("Opcional")]
-    [SerializeField] private KeyCode cancelKey = KeyCode.Escape;
+    [SerializeField] private KeyCode cancelKey;
 
     private Camera camara;
     private GameObject magoSeleccionado;
@@ -24,6 +25,25 @@ public class MagosPlacementManager : MonoBehaviour
         if (camara == null)
             Debug.LogError("PlantPlacementManager: No existe Camera.main (tag MainCamera).");
     }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        camara = Camera.main;
+
+        if (camara == null)
+            Debug.LogError("MagosPlacementManager: No existe Camera.main en la nueva escena.");
+    }
+
 
     public void BeginPlacement(GameObject magoPrefab, int coste)
     {
@@ -73,26 +93,26 @@ public class MagosPlacementManager : MonoBehaviour
 
         if (!hit.collider)
         {
-            Debug.Log("No has clicado una celda.");
+            //Debug.Log("No has clicado una celda.");
             return;
         }
 
         Click_Casilla cell = hit.collider.GetComponent<Click_Casilla>();
         if (cell == null)
         {
-            Debug.Log("Has clicado algo que no es una Cell.");
+            //Debug.Log("Has clicado algo que no es una Cell.");
             return;
         }
 
         if (!cell.IsAvailable)
         {
-            Debug.Log($"{cell.name} NO disponible");
+            //Debug.Log($"{cell.name} NO disponible");
             return;
         }
 
         if (cell.IsOccupied)
         {
-            Debug.Log($"{cell.name} ya está OCUPADA");
+            //Debug.Log($"{cell.name} ya está OCUPADA");
             return;
         }        
 

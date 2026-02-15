@@ -4,27 +4,39 @@ using UnityEngine;
 
 public class Mago_Laser : Magos
 {
+    public float distanciaAtaque;
     private Dragones target;
 
     private void Update()
     {
-        target = LaneManager.Instance.ObtenerPrimerDragon(lane);
+        target = LaneManager.Instance.ObtenerPrimerDragon(lane, transform.position.x);
 
         if (target == null || puedeAtacar == false)
         {
-            gameObject.GetComponent<Animator>().SetBool("Atacar", false);
+            GetComponent<Animator>().SetBool("Atacar", false);
+            return;
+        }
+
+        float distanciaAlDragon = Vector3.Distance(transform.position, target.transform.position);
+
+        if (distanciaAlDragon <= distanciaAtaque)
+        {
+            GetComponent<Animator>().SetBool("Atacar", true);
         }
         else
         {
-            gameObject.GetComponent<Animator>().SetBool("Atacar", true);
+            GetComponent<Animator>().SetBool("Atacar", false);
         }
     }
+
 
     void Atacar()
     {
         if (target != null)
         {
-            audioSource.PlayOneShot(audioDisparo);
+            SoundManager.Instance.PlayLimited(audioDisparo, 5, transform.position, 0.8f);
+            target.TakeDamage(dano);
         }
     }
+
 }

@@ -12,8 +12,6 @@ public class DragonesSpawner : MonoBehaviour
     public int cantidadDragones;
     public int cantidadFinal;
 
-
-
     private void Start()
     {
         lineas = Creacion_Casillas.Instancia.GetRows();
@@ -40,11 +38,13 @@ public class DragonesSpawner : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.M))
         {
             int numeroLinea = Random.Range(0, lineas);
             SpawnDragon(numeroLinea);
         }
+        */
     }
 
     IEnumerator OleadaDragones()
@@ -65,10 +65,18 @@ public class DragonesSpawner : MonoBehaviour
         {
             int numeroLinea = Random.Range(0, lineas);
             SpawnDragon(numeroLinea);
-            yield return null; // para que se creen en frames distintos
+            yield return new WaitForSeconds(0.2f);
         }
 
-        Debug.Log("OLEADA FINAL COMPLETADA");
+
+        //Esperar hasta que no quede ningún dragón
+        yield return new WaitUntil(() => GameObject.FindGameObjectsWithTag("Dragon").Length == 0);
+
+        Transform canvas = FindObjectOfType<Canvas>().transform;
+        Transform panel = canvas.Find("Ganar_Partida");
+
+        panel.gameObject.SetActive(true);
+
     }
 
 

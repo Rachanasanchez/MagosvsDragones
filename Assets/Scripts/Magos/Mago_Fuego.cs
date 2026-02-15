@@ -9,26 +9,25 @@ public class Mago_Fuego : Magos
 
     private void Update()
     {
-        target = LaneManager.Instance.ObtenerPrimerDragon(lane);
+        target = LaneManager.Instance.ObtenerPrimerDragon(lane, transform.position.x);
 
-        if(target == null || puedeAtacar == false)
+        if (target == null || puedeAtacar == false)
         {
-            gameObject.GetComponent<Animator>().SetBool("Atacar", false);
+            GetComponent<Animator>().SetBool("Atacar", false);
         }
         else
         {
-            gameObject.GetComponent<Animator>().SetBool("Atacar", true);
+            GetComponent<Animator>().SetBool("Atacar", true);
         }
     }
+
 
     void Shoot()
     {
         if(target != null)
         {
-            audioSource.PlayOneShot(audioDisparo);
+            SoundManager.Instance.PlayLimited(audioDisparo, 5, transform.position, 0.8f);
             Instantiate(bolaFuego, transform.position, transform.rotation);
-            //target.TakeDamage(dano);
-
         }
     }
 

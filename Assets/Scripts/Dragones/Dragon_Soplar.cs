@@ -54,8 +54,9 @@ public class Dragon_Soplar : Dragones
             rb.AddForce(forceDir, ForceMode2D.Impulse);
         }
 
-        if (audioSource != null && audioAtaque != null)
-            audioSource.PlayOneShot(audioAtaque);
+        if (audioAtaque != null)
+            SoundManager.Instance.PlayLimited(audioAtaque, 5, transform.position, 0.8f);
+
     }
 
 

@@ -9,11 +9,7 @@ public class Dragon_Electrico : Dragones
 
     private void Update()
     {
-        // Buscar planta si no hay objetivo
-        if (targetCell == null || !targetCell.isOccupied)
-        {
-            targetCell = GetNextCellWithPlant();
-        }
+        targetCell = GetNextCellWithPlant();
 
         if (targetCell != null && targetCell.isOccupied)
         {
@@ -21,13 +17,13 @@ public class Dragon_Electrico : Dragones
         }
         else
         {
-            // No hay planta -> caminar
             WalkForward();
         }
     }
 
+
     // Movimiento y ataque
-    
+
     private void AttackBehavior()
     {
         Vector3 targetPos = targetCell.transform.position;
@@ -113,7 +109,8 @@ public class Dragon_Electrico : Dragones
         }
 
         mago.TakeDamage(attack);
-        audioSource.PlayOneShot(audioAtaque);
+        SoundManager.Instance.PlayLimited(audioAtaque, 5, transform.position, 0.8f);
+
 
         if (!targetCell.isOccupied)
             targetCell = null;
@@ -122,7 +119,8 @@ public class Dragon_Electrico : Dragones
 
     public void sonidoVolar()
     {
-        audioSource.PlayOneShot(audioVolar);
+        SoundManager.Instance.PlayLimited(audioVolar, 5, transform.position, 0.8f);
+
     }
 
     // Devuelve la primera celda de la línea que tenga planta
@@ -130,21 +128,31 @@ public class Dragon_Electrico : Dragones
     {
         int columns = GridManager.Instance.grid.GetLength(1);
 
+        Click_Casilla closestCell = null;
+        float closestDistance = float.MaxValue;
+
         for (int col = 0; col < columns; col++)
         {
             Click_Casilla cell = GridManager.Instance.grid[lane, col];
 
             if (cell != null && cell.isOccupied)
             {
-                // SOLO si está por delante del dragón
+                // Solo si está por delante del dragón
                 if (cell.transform.position.x < transform.position.x)
                 {
-                    return cell;
+                    float distance = transform.position.x - cell.transform.position.x;
+
+                    if (distance < closestDistance)
+                    {
+                        closestDistance = distance;
+                        closestCell = cell;
+                    }
                 }
             }
         }
 
-        return null;
+        return closestCell;
     }
+
 
 }

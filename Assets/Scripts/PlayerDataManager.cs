@@ -30,6 +30,11 @@ public class PlayerDataManager : MonoBehaviour
     // SUNS
     // ------------------------
 
+    private void OnEnable()
+    {
+        currentSun = 0;
+    }
+
     public bool HasEnoughSun(int amount)
     {
         return currentSun >= amount;

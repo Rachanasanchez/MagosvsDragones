@@ -15,11 +15,6 @@ public class GameOverManager : MonoBehaviour
 
     void Start()
     {
-        if (panelGameOver != null)
-        {
-            panelGameOver.SetActive(false);
-        }
-
         Time.timeScale = 1f;
     }
 
@@ -46,6 +41,18 @@ public class GameOverManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NextLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void Quit()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 
 }

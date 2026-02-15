@@ -45,10 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabCristal: {fileID: 6772216559722176419, guid: 9ee3963f9282eef45a5155b891c054eb, type: 3}
-  tiempoEntreCristales: 3
-  minX: -8
-  maxX: 8
-  alturaSpawn: 5
+  tiempoEntreCristales: 6
+  minX: -6
+  maxX: 7
+  alturaSpawn: 4
   segundosParaDesaparecerEnSuelo: 6
   listaSprites:
   - {fileID: 21300000, guid: 40d0067ad42a15b4c9d19d6838611be5, type: 3}

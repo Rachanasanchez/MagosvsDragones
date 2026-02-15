@@ -15,8 +15,6 @@ public class LaneManager : MonoBehaviour
         for (int i = 0; i < Creacion_Casillas.Instancia.GetRows(); i++)
             dragonesPorLinea[i] = new List<Dragones>();
 
-        for (int i = 0; i < 5; i++)
-            dragonesPorLinea[i] = new List<Dragones>();
     }
 
     public void RegistrarDragon(Dragones z, int lane)
@@ -31,10 +29,27 @@ public class LaneManager : MonoBehaviour
 
 
     //hacer booleano para saber si hay dragones en la fila
-    public Dragones ObtenerPrimerDragon(int lane)
+    public Dragones ObtenerPrimerDragon(int lane, float posicionAtacanteX)
     {
-        if (dragonesPorLinea[lane].Count == 0) return null;
+        if(lane == -1)
+        {
+            return null;
+        }
 
-        return dragonesPorLinea[lane][0];
+        if (dragonesPorLinea[lane].Count == 0)
+            return null;
+
+        foreach (Dragones dragon in dragonesPorLinea[lane])
+        {
+            // Si el dragón está a la derecha del atacante
+            if (dragon.transform.position.x > posicionAtacanteX)
+            {
+                return dragon;
+            }
+        }
+
+        // Si ninguno está delante
+        return null;
     }
+
 }
