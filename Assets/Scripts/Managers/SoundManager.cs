@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//Clase encargada de manejar la reproducción de sonidos, limitando el número de instancias simultáneas de un mismo clip para evitar saturación
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;

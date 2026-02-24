@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//Clase encargada de crear el grid de casillas, asignarles el sprite correcto, y crear los spawn points para los dragones
 public class Creacion_Casillas : MonoBehaviour
 {
     public static GridManager Instance;

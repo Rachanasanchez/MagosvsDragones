@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Esta clase se encarga de detectar el click en los cristales, y de añadir soles al jugador por cada cristal recogido
 public class Click_Cristales : MonoBehaviour
 {
     [SerializeField] private int valorPorCristal = 50;
@@ -26,7 +27,7 @@ public class Click_Cristales : MonoBehaviour
         // Si el objeto clicado tiene la tag "Cristal", lo recogemos
         if (hit.collider.CompareTag("Cristal"))
         {
-            PlayerDataManager.Instance.AddSun(valorPorCristal);
+            PlayerDataManager.Instance.SumarCristales(valorPorCristal);
             Destroy(hit.collider.gameObject);
         }
     }

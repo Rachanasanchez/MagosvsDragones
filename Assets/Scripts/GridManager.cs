@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+// Este script se encarga de gestionar la cuadrícula de casillas. Es un singleton para que pueda ser accedido desde cualquier parte del juego sin necesidad de referencias directas.
 public class GridManager : MonoBehaviour
 {
     public static GridManager Instance;

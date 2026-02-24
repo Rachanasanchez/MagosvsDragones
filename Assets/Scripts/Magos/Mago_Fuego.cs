@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Clase que representa a un mago especializado en ataques a distancia con fuego.
 public class Mago_Fuego : Magos
 {
     public GameObject bolaFuego;

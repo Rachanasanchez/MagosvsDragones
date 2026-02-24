@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Este script se encarga de gestionar la colocación de los magos en las casillas. Es un singleton para que pueda ser accedido desde cualquier parte del juego sin necesidad de referencias directas.
+// Permite al jugador seleccionar un mago para colocar, seguir el cursor con el mago "en mano", y colocar el mago en una casilla válida al hacer clic. También permite cancelar la colocación con una tecla.
 public class MagosPlacementManager : MonoBehaviour
 {
     public static MagosPlacementManager Instance { get; private set; }
@@ -116,7 +118,7 @@ public class MagosPlacementManager : MonoBehaviour
             return;
         }        
 
-        PlayerDataManager.Instance.SpendSun(costeSeleccion);
+        PlayerDataManager.Instance.GastarCristales(costeSeleccion);
 
         // Colocar: hija de la celda y centrada
         magoSeleccionado.transform.SetParent(cell.transform, worldPositionStays: false);

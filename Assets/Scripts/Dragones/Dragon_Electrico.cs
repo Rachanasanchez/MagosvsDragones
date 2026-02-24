@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//Clase del dragón eléctrico, que se acerca a la planta más cercana por delante de él y la ataca. Si el mago muere o el dragón la pasa, busca otra mago. Si no hay magos, sigue caminando hacia adelante.
+
 public class Dragon_Electrico : Dragones
 {
     private Click_Casilla targetCell;
@@ -9,7 +11,7 @@ public class Dragon_Electrico : Dragones
 
     private void Update()
     {
-        targetCell = GetNextCellWithPlant();
+        targetCell = GetNextCellWithMage();
 
         if (targetCell != null && targetCell.isOccupied)
         {
@@ -45,49 +47,6 @@ public class Dragon_Electrico : Dragones
         }
     }
 
-    /*
-    private void AttackBehavior()
-    {
-        if (targetCell == null)
-        {
-            WalkForward();
-            return;
-        }
-
-        Vector3 targetPos = targetCell.transform.position;
-
-        // Si la he pasado, busco otra PERO SIGO EJECUTANDO
-        if (transform.position.x < targetPos.x)
-        {
-            targetCell = GetNextCellWithPlant();
-
-            if (targetCell == null)
-            {
-                WalkForward();
-                return;
-            }
-
-            targetPos = targetCell.transform.position;
-        }
-
-        float distance = Vector3.Distance(transform.position, targetPos);
-
-        if (distance > attackRange)
-        {
-            transform.position = Vector3.MoveTowards(
-                transform.position,
-                new Vector3(targetPos.x, transform.position.y, transform.position.z),
-                speed * Time.deltaTime
-            );
-
-            GetComponent<Animator>().SetBool("Atacar", false);
-        }
-        else
-        {
-            GetComponent<Animator>().SetBool("Atacar", true);
-        }
-    }
-    */
     private void WalkForward()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
@@ -124,7 +83,7 @@ public class Dragon_Electrico : Dragones
     }
 
     // Devuelve la primera celda de la línea que tenga planta
-    private Click_Casilla GetNextCellWithPlant()
+    private Click_Casilla GetNextCellWithMage()
     {
         int columns = GridManager.Instance.grid.GetLength(1);
 

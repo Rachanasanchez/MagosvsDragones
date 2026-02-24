@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Esta clase se encarga de detectar el click en el icono del mago, y de iniciar el proceso de colocación del mago si el jugador tiene suficientes soles
+
 [RequireComponent(typeof(Collider2D))]
 public class Click_Magos : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class Click_Magos : MonoBehaviour
             return;
         }
 
-        if (PlayerDataManager.Instance.HasEnoughSun(magoPrefab.cost))
+        if (PlayerDataManager.Instance.TieneSuficientesCristales(magoPrefab.cost))
         {
             MagosPlacementManager.Instance.BeginPlacement(magoPrefab.prefab, magoPrefab.cost);
             return;

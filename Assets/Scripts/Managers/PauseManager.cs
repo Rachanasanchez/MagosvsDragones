@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//Clase encargada de manejar la pausa del juego, deteniendo el tiempo y mostrando un menú de pausa
 public class PauseManager : MonoBehaviour
 {
     private bool isPaused = false;

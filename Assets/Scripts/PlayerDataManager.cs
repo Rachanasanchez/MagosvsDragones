@@ -1,16 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Este script se encarga de gestionar los datos del jugador, como la cantidad de cristales que tiene. Es un singleton para que pueda ser accedido desde cualquier parte del juego sin necesidad de referencias directas.
+
 public class PlayerDataManager : MonoBehaviour
 {
     public static PlayerDataManager Instance { get; private set; }
 
     [Header("Sun Settings")]
-    [SerializeField] private int startingSun = 0;
+    [SerializeField] private int cristalesIniciales = 0;
 
-    public int currentSun;
+    public int cristalesActuales;
 
-    public int CurrentSun => currentSun;
+    public int CristalesActuales => cristalesActuales;
 
     private void Awake()
     {
@@ -24,12 +26,8 @@ public class PlayerDataManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        currentSun = startingSun;
+        cristalesActuales = cristalesIniciales;
     }
-
-    // ------------------------
-    // SUNS
-    // ------------------------
 
     private void OnEnable()
     {
@@ -43,33 +41,28 @@ public class PlayerDataManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        currentSun = 0;
+        cristalesActuales = 0;
     }
 
-    public bool HasEnoughSun(int amount)
+    public bool TieneSuficientesCristales(int amount)
     {
-        return currentSun >= amount;
+        return cristalesActuales >= amount;
     }
 
-    public bool SpendSun(int amount)
+    public bool GastarCristales(int amount)
     {
-        if (!HasEnoughSun(amount))
+        if (!TieneSuficientesCristales(amount))
             return false;
 
-        currentSun -= amount;
+        cristalesActuales -= amount;
         //Debug.Log($"Soles gastados: {amount} | Restantes: {currentSun}");
         return true;
     }
 
-    public void AddSun(int amount)
+    public void SumarCristales(int amount)
     {
-        currentSun += amount;
+        cristalesActuales += amount;
         //Debug.Log($"Soles añadidos: {amount} | Total: {currentSun}");
     }
 
-    public void SetSun(int amount)
-    {
-        currentSun = Mathf.Max(0, amount);
-        //Debug.Log($"Soles fijados a: {currentSun}");
-    }
 }

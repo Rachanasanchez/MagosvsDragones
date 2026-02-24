@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
+//Clase encargada de controlar la escena del video, reproduciendo el video al iniciar y volviendo al menú al finalizar o si se presiona ESC
 public class VideoSceneController : MonoBehaviour
 {
     public VideoPlayer videoPlayer;

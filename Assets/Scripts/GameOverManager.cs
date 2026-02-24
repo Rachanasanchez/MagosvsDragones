@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Este script se encarga de gestionar el panel de Game Over, mostrando el panel cuando el jugador pierde, y permitiendo reiniciar el nivel, avanzar al siguiente nivel o volver al menú principal.
+// Es un singleton para que pueda ser accedido desde cualquier parte del juego sin necesidad de referencias directas.
 public class GameOverManager : MonoBehaviour
 {
     public static GameOverManager Instance;

@@ -1,5 +1,8 @@
 using UnityEngine;
 
+//Clase del dragón que sopla, empujando los cristales hacia atrás. Tiene un área de efecto circular, y se puede configurar para que solo afecte a objetos de una capa específica o a objetos con un tag específico.
+//El empuje se compone de una fuerza hacia atrás y una fuerza lateral hacia arriba o hacia abajo dependiendo de la posición del cristal respecto al dragón.
+
 public class Dragon_Soplar : Dragones
 {
 

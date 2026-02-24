@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Clase que representa la bola de fuego lanzada por el mago de fuego. Esta bola se mueve a una velocidad constante y causa daño a los dragones al colisionar con ellos, destruyéndose después del impacto o después de un tiempo determinado.
 public class Bola_Fuego : MonoBehaviour
 {
     public float velocidad;

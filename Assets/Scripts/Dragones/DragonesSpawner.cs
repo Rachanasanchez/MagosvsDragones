@@ -2,6 +2,8 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
+//Clase encargada de generar las oleadas de dragones. Tiene un contador que muestra el tiempo restante para la siguiente oleada, y al finalizar la oleada final muestra un panel de victoria.
+
 public class DragonesSpawner : MonoBehaviour
 {
     public GameObject[] dragonesPrefab;

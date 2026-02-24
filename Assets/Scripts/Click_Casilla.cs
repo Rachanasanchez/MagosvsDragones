@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Esta clase se encarga de detectar el click en la casilla, y de iniciar el proceso de colocación del mago si la casilla está disponible y no ocupada
+
 [RequireComponent(typeof(Collider2D))]
 public class Click_Casilla : MonoBehaviour
 {

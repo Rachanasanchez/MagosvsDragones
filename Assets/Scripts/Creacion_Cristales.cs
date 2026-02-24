@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+//Clase encargada de generar cristales en posiciones aleatorias cada cierto tiempo, y de hacer que desaparezcan al tocar el suelo después de un tiempo determinado
 public class GeneradorCristales : MonoBehaviour
 {
     [Header("Prefab")]

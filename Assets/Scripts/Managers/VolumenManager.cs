@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+//Clase encargada de manejar el volumen del juego, guardando el valor en PlayerPrefs para que se mantenga entre sesiones
 public class VolumenManager : MonoBehaviour
 {
     public AudioMixer audioMixer;

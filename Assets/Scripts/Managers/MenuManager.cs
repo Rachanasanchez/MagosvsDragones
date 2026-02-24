@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Clase encargada de manejar el menú principal, permitiendo navegar entre escenas y mostrar/ocultar paneles de información
 public class MenuManager : MonoBehaviour
 {
     public GameObject panelComoJugar;

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Este script se encarga de gestionar los dragones en cada línea. Es un singleton para que pueda ser accedido desde cualquier parte del juego sin necesidad de referencias directas.
 public class LaneManager : MonoBehaviour
 {
     public static LaneManager Instance;

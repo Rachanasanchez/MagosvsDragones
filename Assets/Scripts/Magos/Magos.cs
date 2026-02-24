@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Clase que representa a cada mago en el juego, con sus atributos como vida, daño y la celda en la que se encuentra. También incluye métodos para inicializar al mago, recibir daño y morir, liberando la celda que ocupaba.
 public class Magos : MonoBehaviour
 {
     public int lane;

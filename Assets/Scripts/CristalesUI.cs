@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class SunUI : MonoBehaviour
+/// Este script se encarga de actualizar el texto que muestra la cantidad de cristales que el jugador tiene.
+
+public class CristalesUI : MonoBehaviour
 {
     private TextMeshPro cantidadCristales;
 
@@ -15,6 +17,6 @@ public class SunUI : MonoBehaviour
     private void Update()
     {
         if (PlayerDataManager.Instance == null) return;
-        cantidadCristales.text = PlayerDataManager.Instance.CurrentSun.ToString();
+        cantidadCristales.text = PlayerDataManager.Instance.CristalesActuales.ToString();
     }
 }
