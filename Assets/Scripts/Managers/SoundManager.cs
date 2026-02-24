@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
-
+    public AudioMixerGroup mixerGroup;
     private Dictionary<AudioClip, int> sonidosActivos = new Dictionary<AudioClip, int>();
 
     private void Awake()
@@ -36,7 +38,6 @@ public class SoundManager : MonoBehaviour
         sonidosActivos.Clear();
     }
 
-
     public void PlayLimited(AudioClip clip, int maxSimultaneos, Vector3 posicion, float volumen = 1f)
     {
         if (clip == null) return;
@@ -57,7 +58,10 @@ public class SoundManager : MonoBehaviour
         AudioSource temp = new GameObject("TempAudio").AddComponent<AudioSource>();
         temp.transform.position = posicion;
         temp.clip = clip;
+        temp.outputAudioMixerGroup = mixerGroup;
+        //aplicamos volumen global
         temp.volume = volumen;
+
         temp.spatialBlend = 0f; // 2D
         temp.Play();
 

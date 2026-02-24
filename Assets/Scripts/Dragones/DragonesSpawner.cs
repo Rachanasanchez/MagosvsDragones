@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class DragonesSpawner : MonoBehaviour
@@ -11,6 +12,12 @@ public class DragonesSpawner : MonoBehaviour
     public int segundosOleada;
     public int cantidadDragones;
     public int cantidadFinal;
+
+    private TMP_Text contadorText;
+    private float remaining;
+    private bool finished;
+
+
 
     private void Start()
     {
@@ -33,11 +40,43 @@ public class DragonesSpawner : MonoBehaviour
         }
 
         StartCoroutine(OleadaDragones());
+
+        GameObject obj = GameObject.Find("Contador");
+
+        if (obj != null)
+        {
+            contadorText = obj.GetComponent<TMP_Text>();
+        }
+        else
+        {
+            Debug.LogError("No se encontró un objeto llamado 'Contador' en la escena.");
+        }
+
+        remaining = segundosOleada + tiempoDeEspera;
+        finished = false;
+        UpdateUI();
+
+
     }
 
 
     private void Update()
     {
+        if (finished) return;
+
+        remaining -= Time.deltaTime;
+
+        if (remaining <= 0f)
+        {
+            remaining = 0f;
+            finished = true;
+
+            contadorText.text = "OLEADA FINAL";
+            return;
+        }
+
+        UpdateUI();
+
         /*
         if (Input.GetKeyDown(KeyCode.M))
         {
@@ -46,6 +85,16 @@ public class DragonesSpawner : MonoBehaviour
         }
         */
     }
+    void UpdateUI()
+    {
+        int totalSeconds = Mathf.CeilToInt(remaining);
+        int minutes = totalSeconds / 60;
+        int seconds = totalSeconds % 60;
+
+        contadorText.text = $"{minutes:00}:{seconds:00}";
+    }
+
+
 
     IEnumerator OleadaDragones()
     {

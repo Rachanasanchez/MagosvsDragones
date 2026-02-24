@@ -63,3 +63,4 @@ MonoBehaviour:
   segundosOleada: 90
   cantidadDragones: 25
   cantidadFinal: 20
+  contadorText: {fileID: 0}
