@@ -8,7 +8,7 @@ public class Magos : MonoBehaviour
     public int lane;
     public Click_Casilla currentCell;
 
-    public float vida = 5f;
+    public float vida;
     public bool puedeAtacar;
     public int dano;
     public AudioClip audioDisparo;
