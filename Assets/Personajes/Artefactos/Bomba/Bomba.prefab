@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 960529719128089772}
   - component: {fileID: 5659769213791877759}
-  - component: {fileID: 622586567870991441}
+  - component: {fileID: 6286195915050027555}
   m_Layer: 0
-  m_Name: Mago_Falso
+  m_Name: Bomba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7a3c06074fe5189448dc9766ce99583c, type: 3}
+  m_Sprite: {fileID: -254253047, guid: 4827b8f173cdb614cb5215359b702fff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &622586567870991441
+--- !u!114 &6286195915050027555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,12 +94,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 639728904604839797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4c11ceb59d20f4f9faa1d15fca9c86, type: 3}
+  m_Script: {fileID: 11500000, guid: 90995284e9f389b48a1b1f3592b68cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
-  currentCell: {fileID: 0}
-  vida: 150
-  puedeAtacar: 0
-  dano: 0
-  audioDisparo: {fileID: 0}

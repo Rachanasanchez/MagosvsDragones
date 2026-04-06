@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magoType: 0
   prefab: {fileID: 639728904604839797, guid: 6cf99ab18b6604c418caeb0ba369d948, type: 3}
-  cost: 150
+  cost: 50

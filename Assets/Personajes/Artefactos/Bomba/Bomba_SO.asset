@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f50de852cd963874e94a0e1918b8634e, type: 3}
-  m_Name: Mago_Rayo
+  m_Name: Bomba_SO
   m_EditorClassIdentifier: 
   magoType: 0
-  prefab: {fileID: 639728904604839797, guid: 261b43df29e092040bf17cf5d28ca5b8, type: 3}
+  prefab: {fileID: 639728904604839797, guid: 6c7a193058527d94c97a712be94040aa, type: 3}
   cost: 150

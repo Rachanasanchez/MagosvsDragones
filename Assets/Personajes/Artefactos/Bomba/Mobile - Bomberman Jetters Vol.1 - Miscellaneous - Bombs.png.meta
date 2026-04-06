@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bomb1
+      name: Bomba1_imagen
       rect:
         serializedVersion: 2
         x: 2
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bomb2
+      name: Bomba2_imagen
       rect:
         serializedVersion: 2
         x: 30
@@ -238,6 +238,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Bomba1_imagen: -332050483
+      Bomba2_imagen: -254253047
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_10: -289834747
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_11: 410535077
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_12: -1343076825
@@ -254,8 +256,6 @@ TextureImporter:
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_7: -534104052
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_8: 528519731
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_9: -371384092
-      bomb1: -332050483
-      bomb2: -254253047
       explosion1: 1034447073
       explosion2: -195551823
       explosion3: 809619696
