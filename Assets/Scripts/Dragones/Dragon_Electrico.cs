@@ -58,7 +58,7 @@ public class Dragon_Electrico : Dragones
     {
         if (targetCell == null || !targetCell.isOccupied) return;
 
-        Magos mago = targetCell.magoEnCasilla;
+        Unidades mago = targetCell.magoEnCasilla;
 
         if (mago == null)
         {

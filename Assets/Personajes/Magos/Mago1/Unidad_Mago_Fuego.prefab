@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3626371869476223005}
   - component: {fileID: 6987185768640997253}
   - component: {fileID: 7940014299237230239}
-  - component: {fileID: 5880080895842593516}
+  - component: {fileID: -7090687139991193444}
   m_Layer: 0
-  m_Name: Mago_Fuego
+  m_Name: Unidad_Mago_Fuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5880080895842593516
+--- !u!114 &-7090687139991193444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,13 +116,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3118328225198995877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1efa5d4492e694580b43010a7c7684, type: 3}
+  m_Script: {fileID: 11500000, guid: bae66254ed13ac04fb89b52cfdba6619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lane: -1
   currentCell: {fileID: 0}
+  coste: 0
   vida: 15
   puedeAtacar: 1
-  dano: 1
-  audioDisparo: {fileID: 8300000, guid: 66d74b3534ba3c34fadd76656359eb81, type: 3}
+  dano: 0
   bolaFuego: {fileID: 2812514212737081040, guid: 12480e5c2670b984dacfaa3072833253, type: 3}
+  audioDisparo: {fileID: 8300000, guid: 66d74b3534ba3c34fadd76656359eb81, type: 3}

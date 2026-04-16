@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Clase que representa a un mago especializado en ataques cercanos con su espada.
-//Este mago busca al primer dragón en su carril y ataca si está dentro de su rango de ataque, reproduciendo un sonido de disparo y aplicando daño al dragón objetivo.
-
-public class Mago_Rayo : Magos
+public class Unidad_Mago_Rayo : Unidades
 {
     public GameObject hechizo;
+    public AudioClip audioDisparo;
+
     private Dragones target;
 
     private void Update()
@@ -32,5 +31,4 @@ public class Mago_Rayo : Magos
             Instantiate(hechizo, transform.position, transform.rotation);
         }
     }
-
 }

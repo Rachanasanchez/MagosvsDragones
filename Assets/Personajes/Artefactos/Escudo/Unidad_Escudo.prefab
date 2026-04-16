@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 960529719128089772}
   - component: {fileID: 5659769213791877759}
-  - component: {fileID: 6079552096405915336}
-  - component: {fileID: -5568268364136783008}
+  - component: {fileID: 4553998627104203181}
   m_Layer: 0
-  m_Name: Mago_Rayo
+  m_Name: Unidad_Escudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 1878523837, guid: 71a1e646413b58c4ebd4f17a2dce6ac3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a3c06074fe5189448dc9766ce99583c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,28 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &6079552096405915336
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639728904604839797}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b63296154537adc43b5ffaea4570cab7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-5568268364136783008
+--- !u!114 &4553998627104203181
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,13 +94,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 639728904604839797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aa356621c661814cb542e7ece41ca24, type: 3}
+  m_Script: {fileID: 11500000, guid: 78bde4a938bcd9442a760443fedc0434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
+  lane: -1
   currentCell: {fileID: 0}
-  vida: 10
+  coste: 0
+  vida: 25
   puedeAtacar: 0
-  dano: 10
-  audioDisparo: {fileID: 8300000, guid: 66d74b3534ba3c34fadd76656359eb81, type: 3}
-  hechizo: {fileID: 2812514212737081040, guid: 9fe6161ea7e839a499c6b51adb647e26, type: 3}
+  dano: 0

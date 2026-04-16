@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bomba : Magos
+public class Bomba : Unidades
 {
     private bool haExplotado = false;
 
@@ -17,7 +17,7 @@ public class Bomba : Magos
     }*/
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("La bomba detectó: " + other.name);
+        Debug.Log("La bomba detecto: " + other.name);
 
         if (haExplotado) return;
 

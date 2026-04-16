@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class Click_Casilla : MonoBehaviour
 {
-    public Magos magoEnCasilla;
+    public Unidades magoEnCasilla;
 
     [Header("State")]
     public bool isOccupied;
@@ -55,7 +55,7 @@ public class Click_Casilla : MonoBehaviour
         cost = newCost;
     }
 
-    public void Ocupar(Magos mago)
+    public void Ocupar(Unidades mago)
     {
         magoEnCasilla = mago;
         SetOccupied(true);

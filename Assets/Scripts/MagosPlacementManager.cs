@@ -125,7 +125,7 @@ public class MagosPlacementManager : MonoBehaviour
         magoSeleccionado.transform.localPosition = Vector3.zero;
 
         // settear todo del mago
-        Magos mago = magoSeleccionado.GetComponent<Magos>();
+        Unidades mago = magoSeleccionado.GetComponent<Unidades>();
         mago.Initialize(cell);
 
         // OJO: ocupa la casilla guardando referencia al mago

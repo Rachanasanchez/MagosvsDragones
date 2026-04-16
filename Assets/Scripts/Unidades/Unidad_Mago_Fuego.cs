@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-//Clase que representa a un mago especializado en ataques a distancia con fuego.
-public class Mago_Fuego : Magos
+public class Unidad_Mago_Fuego : Unidades
 {
     public GameObject bolaFuego;
+    public AudioClip audioDisparo;
+
     private Dragones target;
 
     private void Update()
@@ -25,11 +24,10 @@ public class Mago_Fuego : Magos
 
     void Shoot()
     {
-        if(target != null)
+        if (target != null)
         {
             SoundManager.Instance.PlayLimited(audioDisparo, 5, transform.position, 0.8f);
             Instantiate(bolaFuego, transform.position, transform.rotation);
         }
     }
-
 }
