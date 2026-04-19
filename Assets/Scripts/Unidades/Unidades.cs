@@ -17,7 +17,7 @@ public class Unidades : MonoBehaviour
         puedeAtacar = true;
     }
 
-    public void TakeDamage(float dmg)
+    public virtual void TakeDamage(float dmg)
     {
         vida -= dmg;
 

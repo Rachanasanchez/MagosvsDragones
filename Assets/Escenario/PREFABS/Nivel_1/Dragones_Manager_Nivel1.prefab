@@ -58,9 +58,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragonesPrefab:
-  - {fileID: 3118328225198995877, guid: 22a3fa5c8b2141b4ea70423fc582b8df, type: 3}
+  - {fileID: 3118328225198995877, guid: 66d0757444599734b99bd6dd4f727d3b, type: 3}
   tiempoDeEspera: 16
   segundosOleada: 90
   cantidadDragones: 25
   cantidadFinal: 20
-  contadorText: {fileID: 0}

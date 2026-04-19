@@ -227,6 +227,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: RayoDragon
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 508
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5437379fdf18114193e023e4b5b1f88
+      internalID: -2101608148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -256,6 +277,7 @@ TextureImporter:
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_7: -534104052
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_8: 528519731
       Mobile - Bomberman Jetters Vol.1 - Miscellaneous - Bombs_9: -371384092
+      RayoDragon: -2101608148
       explosion1: 1034447073
       explosion2: -195551823
       explosion3: 809619696
