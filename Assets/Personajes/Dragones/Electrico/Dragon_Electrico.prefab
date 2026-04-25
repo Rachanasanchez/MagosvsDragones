@@ -127,7 +127,8 @@ MonoBehaviour:
   lane: 0
   audioAtaque: {fileID: 8300000, guid: 4f3727d56d1878a41a353e115f9233f2, type: 3}
   audioVolar: {fileID: 8300000, guid: 8e7fe7ae84a041a41bda8e83fa3f2a52, type: 3}
-  audioSource: {fileID: 0}
+  animacionMuerte: {fileID: 5239737205612133120, guid: 40e0cd9026e62814bbf1794b1124e926, type: 3}
+  audioMuerte: {fileID: 8300000, guid: 189bca1d8edfb67408a008a1d8d626d3, type: 3}
   attackRange: 1
 --- !u!61 &7933461817594766790
 BoxCollider2D:

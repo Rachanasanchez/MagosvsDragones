@@ -10,6 +10,8 @@ public class Dragones : MonoBehaviour
     public int lane;
     public AudioClip audioAtaque;
     public AudioClip audioVolar;
+    public GameObject animacionMuerte;
+    public AudioClip audioMuerte;
 
     public void SetLane(int l)
     {
@@ -27,6 +29,8 @@ public class Dragones : MonoBehaviour
 
     public void Die()
     {
+        Instantiate(animacionMuerte, transform.position, Quaternion.identity);
+        SoundManager.Instance.PlayLimited(audioMuerte, 5, transform.position, 0.8f);
         Destroy(gameObject);
     }
 

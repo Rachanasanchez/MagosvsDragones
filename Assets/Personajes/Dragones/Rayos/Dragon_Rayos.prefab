@@ -123,10 +123,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   health: 20
-  attack: 2
+  attack: 1
   lane: 0
   audioAtaque: {fileID: 8300000, guid: 4f3727d56d1878a41a353e115f9233f2, type: 3}
   audioVolar: {fileID: 8300000, guid: 8e7fe7ae84a041a41bda8e83fa3f2a52, type: 3}
+  animacionMuerte: {fileID: 5239737205612133120, guid: 40e0cd9026e62814bbf1794b1124e926, type: 3}
+  audioMuerte: {fileID: 8300000, guid: 189bca1d8edfb67408a008a1d8d626d3, type: 3}
   rayoPrefab: {fileID: 5239737205612133120, guid: d1ef64147f8389e41a68c4a8c9dedb55, type: 3}
   rayoPermanentePrefab: {fileID: 5239737205612133120, guid: cd8767ed71421cc44a44707f8ee2c569, type: 3}
   attackRange: 1
