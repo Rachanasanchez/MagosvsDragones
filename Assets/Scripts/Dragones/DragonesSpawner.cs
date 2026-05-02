@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 //Clase encargada de generar las oleadas de dragones. Tiene un contador que muestra el tiempo restante para la siguiente oleada, y al finalizar la oleada final muestra un panel de victoria.
 
@@ -14,11 +15,12 @@ public class DragonesSpawner : MonoBehaviour
     public int segundosOleada;
     public int cantidadDragones;
     public int cantidadFinal;
+    public Slider sliderRonda;
+
 
     private TMP_Text contadorText;
     private float remaining;
     private bool finished;
-
 
 
     private void Start()
@@ -41,6 +43,17 @@ public class DragonesSpawner : MonoBehaviour
             }
         }
 
+        GameObject sliderObj = GameObject.Find("Slider_Ronda");
+
+        if (sliderObj != null)
+        {
+            sliderRonda = sliderObj.GetComponent<Slider>();
+        }
+        else
+        {
+            Debug.LogError("No se encontró el GameObject 'Slider_Ronda'");
+        }
+
         StartCoroutine(OleadaDragones());
 
         GameObject obj = GameObject.Find("Contador");
@@ -55,6 +68,10 @@ public class DragonesSpawner : MonoBehaviour
         }
 
         remaining = segundosOleada + tiempoDeEspera;
+
+        sliderRonda.maxValue = remaining;
+        sliderRonda.value = remaining;
+
         finished = false;
         UpdateUI();
 
@@ -78,14 +95,6 @@ public class DragonesSpawner : MonoBehaviour
         }
 
         UpdateUI();
-
-        /*
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            int numeroLinea = Random.Range(0, lineas);
-            SpawnDragon(numeroLinea);
-        }
-        */
     }
     void UpdateUI()
     {
@@ -94,6 +103,8 @@ public class DragonesSpawner : MonoBehaviour
         int seconds = totalSeconds % 60;
 
         contadorText.text = $"{minutes:00}:{seconds:00}";
+
+        sliderRonda.value = remaining;
     }
 
 

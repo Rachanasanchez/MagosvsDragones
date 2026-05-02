@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4030191983547545326}
   - component: {fileID: 2413461301567792308}
   - component: {fileID: 5549733132502780538}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Casilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}

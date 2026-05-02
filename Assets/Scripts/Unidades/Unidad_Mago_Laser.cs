@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 
 public class Unidad_Mago_Laser : Unidades
 {
     public float distanciaAtaque;
     public AudioClip audioDisparo;
+    public GameObject particulas;
 
     private Dragones target;
 
@@ -38,6 +38,7 @@ public class Unidad_Mago_Laser : Unidades
         if (target != null)
         {
             SoundManager.Instance.PlayLimited(audioDisparo, 5, transform.position, 0.8f);
+            Instantiate(particulas, (Vector2)target.transform.position + Vector2.right * 0.2f, Quaternion.identity);
             target.TakeDamage(dano);
         }
     }

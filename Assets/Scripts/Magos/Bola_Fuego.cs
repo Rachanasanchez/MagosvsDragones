@@ -7,6 +7,7 @@ public class Bola_Fuego : MonoBehaviour
 {
     public float velocidad;
     public float dano;
+    public GameObject particulas;
 
     private Rigidbody2D rb;
 
@@ -26,8 +27,8 @@ public class Bola_Fuego : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Dragones>(out var dragon))
         {
             dragon.TakeDamage(dano);
+            Instantiate(particulas, (Vector2)transform.position + Vector2.right * 0.5f, Quaternion.identity);
             Destroy(gameObject);
-
         }
     }
 }

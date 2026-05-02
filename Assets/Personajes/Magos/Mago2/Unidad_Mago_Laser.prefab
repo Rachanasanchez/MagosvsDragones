@@ -125,5 +125,6 @@ MonoBehaviour:
   vida: 25
   puedeAtacar: 1
   dano: 7
-  distanciaAtaque: 8
+  distanciaAtaque: 4
   audioDisparo: {fileID: 8300000, guid: ee9513b5a8a7bb947a8546afb58e9f1a, type: 3}
+  particulas: {fileID: 2812514212737081040, guid: b8a36e307c7b6ed4ab19d84bfa5ad1f1, type: 3}

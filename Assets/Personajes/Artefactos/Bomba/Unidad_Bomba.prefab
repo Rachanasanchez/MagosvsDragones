@@ -103,7 +103,7 @@ MonoBehaviour:
   coste: 0
   vida: 1
   puedeAtacar: 0
-  dano: 20
+  dano: 200
   fuegoBombaPrefab: {fileID: 5239737205612133120, guid: c1308dc99dbdd7c4a939d5622920d357, type: 3}
 --- !u!95 &-7911292130518550964
 Animator:

@@ -10,9 +10,18 @@ public class Dragon_Rayo : Dragones
     [Header("Distancia para atacar")]
     public float attackRange;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+
     private void Update()
     {
-        targetCell = GetNextCellWithMage();
+        if (!isAttacking)
+        {
+            targetCell = GetNextCellWithMage();
+        }
 
         if (targetCell != null && targetCell.isOccupied)
         {
@@ -26,9 +35,11 @@ public class Dragon_Rayo : Dragones
 
 
     // Movimiento y ataque
-
+    /*
     private void AttackBehavior()
     {
+        isAttacking = true;
+
         Vector3 targetPos = targetCell.transform.position;
         float distance = Vector3.Distance(transform.position, targetPos);
 
@@ -46,16 +57,50 @@ public class Dragon_Rayo : Dragones
             // Frente a la planta -> atacar
             gameObject.GetComponent<Animator>().SetBool("Atacar", true);
         }
+        isAttacking = false;
+
+    }
+    */
+
+    private void AttackBehavior()
+    {
+        if (targetCell == null) return;
+
+        Vector3 targetPos = targetCell.transform.position;
+        float distance = Vector3.Distance(transform.position, targetPos);
+
+        if (distance > attackRange)
+        {
+            // moverse
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                new Vector3(targetPos.x, transform.position.y, transform.position.z),
+                speed * Time.deltaTime
+            );
+
+            anim.SetBool("Atacar", false);
+        }
+        else
+        {
+            // entrar en estado de ataque SOLO una vez
+            if (!isAttacking)
+            {
+                isAttacking = true;
+                lockedTarget = targetCell;
+                anim.SetBool("Atacar", true);
+            }
+        }
     }
 
     private void WalkForward()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
-        GetComponent<Animator>().SetBool("Atacar", false);
+        anim.SetBool("Atacar", false);
     }
 
     public void Hacer_Dano()
     {
+        if (lockedTarget == null || !lockedTarget.isOccupied) return;
         if (targetCell == null || !targetCell.isOccupied) return;
 
         Unidades unidadObjetivo = targetCell.magoEnCasilla;
@@ -64,6 +109,7 @@ public class Dragon_Rayo : Dragones
         {
             targetCell.Liberar();
             targetCell = null;
+            lockedTarget = null;
             return;
         }
 
@@ -124,6 +170,13 @@ public class Dragon_Rayo : Dragones
                 rayo.Inicializar(casilla);
             }
         }
+    }
+
+    public void FinAtaque()
+    {
+        isAttacking = false;
+        lockedTarget = null;
+        anim.SetBool("Atacar", false);
     }
 
     public void sonidoVolar()

@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 3
   dano: 2
+  particulas: {fileID: 2812514212737081040, guid: b0271a5de48cf824ab289bde1f91215f, type: 3}
 --- !u!50 &3897833471222009341
 Rigidbody2D:
   serializedVersion: 4

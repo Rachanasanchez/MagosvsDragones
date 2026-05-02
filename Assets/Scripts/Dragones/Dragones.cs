@@ -12,6 +12,9 @@ public class Dragones : MonoBehaviour
     public AudioClip audioVolar;
     public GameObject animacionMuerte;
     public AudioClip audioMuerte;
+    protected Animator anim;
+    protected bool isAttacking;
+    protected Click_Casilla lockedTarget;
 
     public void SetLane(int l)
     {

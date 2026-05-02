@@ -13,6 +13,7 @@ public class MagosPlacementManager : MonoBehaviour
     private Camera camara;
     private GameObject magoSeleccionado;
     private int costeSeleccion;
+    [SerializeField] private LayerMask cellLayer;
 
     private void Awake()
     {
@@ -91,7 +92,8 @@ public class MagosPlacementManager : MonoBehaviour
     private void TryPlaceOnCell()
     {
         Vector2 worldPoint = camara.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+        //RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, cellLayer);
 
         if (!hit.collider)
         {

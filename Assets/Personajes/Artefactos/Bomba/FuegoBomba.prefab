@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7985149107611501157}
   - component: {fileID: 1673766143332442156}
-  - component: {fileID: 4349871067660185694}
+  - component: {fileID: -1909121166580307685}
   - component: {fileID: -2958669594980522915}
   m_Layer: 0
   m_Name: FuegoBomba
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4349871067660185694
+--- !u!114 &-1909121166580307685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5239737205612133120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 958f19f983b205b4a9fbe47c5c6d2867, type: 3}
+  m_Script: {fileID: 11500000, guid: e869a40dce775c44a9dd61405537ca68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &-2958669594980522915
