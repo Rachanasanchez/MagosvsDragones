@@ -121,8 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lane: -1
   currentCell: {fileID: 0}
-  coste: 0
-  vida: 10
+  coste: 200
+  vida: 20
   puedeAtacar: 1
   dano: 0
   hechizo: {fileID: 2812514212737081040, guid: b59f318bd7fd4804c8fe629d4dd7cec0, type: 3}

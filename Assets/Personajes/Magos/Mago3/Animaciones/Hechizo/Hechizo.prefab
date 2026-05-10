@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348c627752e2fa34c9b201732329c196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 3
-  dano: 2
+  velocidad: 5
+  dano: 5
   particulas: {fileID: 2812514212737081040, guid: b6672f98dfdc6ed4eb7a036d64febfe9, type: 3}
 --- !u!50 &3897833471222009341
 Rigidbody2D:

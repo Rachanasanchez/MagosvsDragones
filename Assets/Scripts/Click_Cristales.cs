@@ -5,7 +5,7 @@ using UnityEngine;
 // Esta clase se encarga de detectar el click en los cristales, y de añadir soles al jugador por cada cristal recogido
 public class Click_Cristales : MonoBehaviour
 {
-    [SerializeField] private int valorPorCristal = 50;
+    [SerializeField] private int valorPorCristal;
 
     private Camera cam;
 

@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1400323484589997937}
   - component: {fileID: 3045522403295075404}
-  - component: {fileID: 1151174759918963169}
+  - component: {fileID: 3636812872367590964}
   m_Layer: 0
-  m_Name: Dragones_Manager_Nivel1
+  m_Name: Dragones_Manager_Nivel5_Infinito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455fd0fedc02a1841984ab27cc90f57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1151174759918963169
+--- !u!114 &3636812872367590964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,13 +54,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1018725089486661849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c84b0a56b61dd1459bf03160ffedcc0, type: 3}
+  m_Script: {fileID: 11500000, guid: b316bdf964ed1ad40a8689fcbc8a4f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragonesPrefab:
+  dragonPrefabs:
   - {fileID: 3118328225198995877, guid: 22a3fa5c8b2141b4ea70423fc582b8df, type: 3}
-  tiempoDeEspera: 10
-  segundosOleada: 90
-  cantidadDragones: 30
-  cantidadFinal: 20
-  sliderRonda: {fileID: 0}
+  - {fileID: 3118328225198995877, guid: 66d0757444599734b99bd6dd4f727d3b, type: 3}
+  - {fileID: 3235512896909162955, guid: 2c1317cc7f1d2fd4497529a1d20f0d32, type: 3}
+  intensity: 1
+  intensityGrowth: 0.03
+  startSpawnCooldown: 20
+  minimumSpawnCooldown: 0.5
+  startEnemyCap: 3
+  enemyCapGrowth: 1.5
+  debugMode: 1

@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558b9469b78d81349b43f93d9943c0dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cristalesIniciales: 0
+  cristalesIniciales: 50
   cristalesActuales: 0
 --- !u!114 &9179003074085288605
 MonoBehaviour:

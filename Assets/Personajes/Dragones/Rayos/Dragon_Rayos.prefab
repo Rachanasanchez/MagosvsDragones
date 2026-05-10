@@ -121,9 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7c1c7ec805da8449c78fe207c507bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  health: 20
-  attack: 1
+  speed: 0.9
+  health: 25
+  attack: 2
   lane: 0
   audioAtaque: {fileID: 8300000, guid: 4f3727d56d1878a41a353e115f9233f2, type: 3}
   audioVolar: {fileID: 8300000, guid: 8e7fe7ae84a041a41bda8e83fa3f2a52, type: 3}

@@ -8,7 +8,7 @@ public class PlayerDataManager : MonoBehaviour
     public static PlayerDataManager Instance { get; private set; }
 
     [Header("Sun Settings")]
-    [SerializeField] private int cristalesIniciales = 0;
+    [SerializeField] private int cristalesIniciales;
 
     public int cristalesActuales;
 
@@ -41,7 +41,7 @@ public class PlayerDataManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        cristalesActuales = 0;
+        cristalesActuales = cristalesIniciales;
     }
 
     public bool TieneSuficientesCristales(int amount)

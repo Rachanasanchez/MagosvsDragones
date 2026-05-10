@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lane: 0
   currentCell: {fileID: 0}
-  coste: 0
+  coste: 125
   vida: 1
   puedeAtacar: 0
   dano: 200

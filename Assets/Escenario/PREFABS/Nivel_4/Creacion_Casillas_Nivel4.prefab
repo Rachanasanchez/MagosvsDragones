@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7818691276960783899}
   - component: {fileID: 5631044840778586289}
   m_Layer: 0
-  m_Name: Creacion_Casillas_Nivel1
+  m_Name: Creacion_Casillas_Nivel4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,9 +47,9 @@ MonoBehaviour:
   celdaClara: {fileID: 21300000, guid: 381d2869a2e783147a9eb8ad2bf86b56, type: 3}
   celdaOscura: {fileID: 21300000, guid: cb952ee2f7c58564f878abe6e28f2e14, type: 3}
   cellPrefab: {fileID: 2494567416105840156, guid: f4391ffef20a59d4ba3792084a868e76, type: 3}
-  rows: 3
-  columns: 5
+  rows: 6
+  columns: 8
   spacingX: 1.1
   spacingY: 1.1
   centerGrid: 1
-  espacio: 7.5
+  espacio: 6
