@@ -6,10 +6,11 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject panelComoJugar;
     public GameObject panelOpciones;
+    public GameObject panelNiveles;
 
-    public void Jugar()
+    public void ActivarPanelNiveles()
     {
-        SceneManager.LoadScene("Nivel1"); 
+        panelNiveles.SetActive(true);
     }
 
     public void Video()
