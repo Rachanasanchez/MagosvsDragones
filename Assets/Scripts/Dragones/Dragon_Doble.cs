@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Dragon_Doble : Dragones
 {
+    public GameObject rayoDoblePrefab;
     private Click_Casilla targetCell;
 
     [Header("Distancia para atacar")]
@@ -68,6 +69,16 @@ public class Dragon_Doble : Dragones
         if (lockedTarget == null || !lockedTarget.isOccupied) return;
         if (targetCell == null || !targetCell.isOccupied) return;
 
+        Unidades unidadObjetivo = targetCell.magoEnCasilla;
+
+        if (unidadObjetivo == null)
+        {
+            targetCell.Liberar();
+            targetCell = null;
+            lockedTarget = null;
+            return;
+        }
+
         AtacarCasilla(targetCell);
 
         AtacarCasilla(GetCasilla(targetCell.Fila - 1, targetCell.Columna));
@@ -95,12 +106,9 @@ public class Dragon_Doble : Dragones
         if (casilla == null || !casilla.isOccupied) return;
 
         Unidades unidad = casilla.magoEnCasilla;
+        if (unidad == null) return;
 
-        if (unidad == null)
-        {
-            casilla.Liberar();
-            return;
-        }
+        Instantiate(rayoDoblePrefab, casilla.transform.position, Quaternion.identity);
 
         unidad.TakeDamage(attack);
     }

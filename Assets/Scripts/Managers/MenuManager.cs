@@ -23,9 +23,13 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Creditos");
     }
 
+    public void DesactivarPanelNiveles()
+    {
+        panelNiveles.SetActive(false);
+    }
+
     public void Salir()
     {
-        Debug.Log("Salir del juego");
         Application.Quit();
     }
 

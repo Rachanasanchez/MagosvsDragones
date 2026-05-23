@@ -9,21 +9,16 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        if (!PlayerPrefs.HasKey("NivelDesbloqueado"))
-        {
-            PlayerPrefs.SetInt("NivelDesbloqueado", 1);
-        }
-
         ActualizarNiveles();
     }
 
     void ActualizarNiveles()
     {
-        int nivelDesbloqueado = PlayerPrefs.GetInt("NivelDesbloqueado");
-
         for (int i = 0; i < botonesNiveles.Length; i++)
         {
-            bool desbloqueado = i < nivelDesbloqueado;
+            int levelNumber = i + 1;
+
+            bool desbloqueado = SistemaGuardado.IsLevelUnlocked(levelNumber);
 
             botonesNiveles[i].interactable = desbloqueado;
 
@@ -36,9 +31,7 @@ public class LevelManager : MonoBehaviour
 
     public void CargarNivel(int nivel)
     {
-        int nivelDesbloqueado = PlayerPrefs.GetInt("NivelDesbloqueado");
-
-        if (nivel <= nivelDesbloqueado)
+        if (SistemaGuardado.IsLevelUnlocked(nivel))
         {
             SceneManager.LoadScene("Nivel" + nivel);
         }

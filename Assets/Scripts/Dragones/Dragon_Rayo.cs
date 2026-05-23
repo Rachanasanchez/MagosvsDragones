@@ -33,35 +33,6 @@ public class Dragon_Rayo : Dragones
         }
     }
 
-
-    // Movimiento y ataque
-    /*
-    private void AttackBehavior()
-    {
-        isAttacking = true;
-
-        Vector3 targetPos = targetCell.transform.position;
-        float distance = Vector3.Distance(transform.position, targetPos);
-
-        if (distance > attackRange)
-        {
-            // Caminar hacia la planta
-            transform.position = Vector3.MoveTowards(transform.position,
-                                                     new Vector3(targetPos.x, transform.position.y, transform.position.z),
-                                                     speed * Time.deltaTime);
-            gameObject.GetComponent<Animator>().SetBool("Atacar", false);
-        }
-        else
-        {
-            //Debug.Log("Estoy en rango y pongo Atacar = true");
-            // Frente a la planta -> atacar
-            gameObject.GetComponent<Animator>().SetBool("Atacar", true);
-        }
-        isAttacking = false;
-
-    }
-    */
-
     private void AttackBehavior()
     {
         if (targetCell == null) return;
@@ -182,7 +153,6 @@ public class Dragon_Rayo : Dragones
     public void sonidoVolar()
     {
         SoundManager.Instance.PlayLimited(audioVolar, 5, transform.position, 0.8f);
-
     }
 
     // Devuelve la primera celda de la línea que tenga planta

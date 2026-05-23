@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd408714ca91744db433f9ab91b5eca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.8
+  speed: 0.35
   health: 35
   attack: 3
   lane: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   audioVolar: {fileID: 8300000, guid: 8e7fe7ae84a041a41bda8e83fa3f2a52, type: 3}
   animacionMuerte: {fileID: 5239737205612133120, guid: 40e0cd9026e62814bbf1794b1124e926, type: 3}
   audioMuerte: {fileID: 8300000, guid: ec0a788d28c88b84e91daf3f279b7673, type: 3}
+  rayoDoblePrefab: {fileID: 5239737205612133120, guid: c1308dc99dbdd7c4a939d5622920d357, type: 3}
   attackRange: 1
 --- !u!61 &2721744492668536694
 BoxCollider2D:

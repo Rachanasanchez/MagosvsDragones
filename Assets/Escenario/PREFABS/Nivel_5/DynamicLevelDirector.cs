@@ -10,281 +10,158 @@ public class DynamicLevelDirector : MonoBehaviour
     private Transform[] lanes;
     private int laneCount;
 
-    [Header("Intensity")]
-    [Tooltip("Intensidad inicial")]
-    public float intensity = 1f;
+    [Header("Difficulty Growth")]
+    public float intensityGrowthSpeed = 0.02f;
 
-    [Tooltip("Velocidad de crecimiento exponencial")]
-    public float intensityGrowth = 0.03f;
+    [Header("Enemy Scaling")]
+    public int startEnemyTarget = 3;
+    public int maxEnemyTarget = 150;
+    public float enemyGrowthPower = 1.4f;
 
-    [Header("Spawn")]
-    [Tooltip("Cooldown inicial")]
-    public float startSpawnCooldown = 1.5f;
-
-    [Tooltip("Cooldown mínimo absoluto")]
-    public float minimumSpawnCooldown = 0.02f;
-
-    [Header("Enemy Cap")]
-    [Tooltip("Máximo inicial de enemigos")]
-    public int startEnemyCap = 5;
-
-    [Tooltip("Cuánto aumenta el cap con la intensidad")]
-    public float enemyCapGrowth = 1.5f;
+    [Header("Spawn Control")]
+    public float spawnBurstDelay = 0.05f; // anti freeze
 
     [Header("Debug")]
     public bool debugMode = true;
+    private float debugTimer;
 
     private float elapsedTime;
     private float spawnTimer;
 
-    private bool running;
-
-    private float debugTimer;
-
-    // =========================
-    // START
-    // =========================
-
-    void Start()
+    private void Start()
     {
         SetupLanes();
-
-        StartInfiniteMode();
-    }
-
-    void Update()
-    {
-        // DEBUG SPEED
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Time.timeScale = 3f;
-        }
-
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Time.timeScale = 1f;
-        }
-    }
-
-    // =========================
-    // INIT
-    // =========================
-
-    public void StartInfiniteMode()
-    {
-        StopAllCoroutines();
-
-        elapsedTime = 0f;
-        spawnTimer = 0f;
-
-        running = true;
-
         StartCoroutine(InfiniteLoop());
     }
-
-    // =========================
-    // LANES
-    // =========================
 
     void SetupLanes()
     {
         laneCount = Creacion_Casillas.Instancia.GetRows();
-
         lanes = new Transform[laneCount];
 
         for (int i = 0; i < laneCount; i++)
         {
-            GameObject obj = GameObject.Find($"SpawnPoint_{i}");
-
-            if (obj != null)
-            {
-                lanes[i] = obj.transform;
-            }
-            else
-            {
-                Debug.LogError($"No existe SpawnPoint_{i}");
-            }
+            lanes[i] = GameObject.Find($"SpawnPoint_{i}")?.transform;
         }
     }
 
-    // =========================
-    // MAIN LOOP
-    // =========================
-
     IEnumerator InfiniteLoop()
     {
-        while (running)
+        while (true)
         {
-            RunDirector();
+            elapsedTime += Time.deltaTime;
+
+            float intensity = GetIntensity();
+
+            int enemyCount = GameObject.FindGameObjectsWithTag("Dragon").Length;
+
+            int targetEnemies = GetTargetEnemies(intensity);
+
+            // 🧠 DIFERENCIA REAL
+            int deficit = targetEnemies - enemyCount;
+
+            // 🔥 SPAM CONTROLADO (evita spawnear todo en 1 frame)
+            if (deficit > 0)
+            {
+                spawnTimer -= Time.deltaTime;
+
+                if (spawnTimer <= 0f)
+                {
+                    SpawnBurst(deficit, intensity);
+                    spawnTimer = spawnBurstDelay;
+                }
+            }
+            else
+            {
+                spawnTimer = 0f;
+            }
+
+            if (debugMode)
+            {
+                debugTimer += Time.deltaTime;
+
+                if (debugTimer >= 0.5f)
+                {
+                    Debug.Log(
+                        $"TIME={elapsedTime:F1} | INT={intensity:F2} | ENEMIES={enemyCount} | TARGET={targetEnemies} | DEFICIT={deficit}"
+                    );
+
+                    debugTimer = 0f;
+                }
+            }
 
             yield return null;
         }
     }
 
-    // =========================
-    // DIRECTOR
-    // =========================
-
-    void RunDirector()
+    // ----------------------------
+    // INTENSIDAD CONTINUA
+    // ----------------------------
+    float GetIntensity()
     {
-        elapsedTime += Time.deltaTime;
-
-        // CRECIMIENTO EXPONENCIAL
-        intensity = Mathf.Exp(elapsedTime * intensityGrowth);
-
-        int enemyCount = GameObject.FindGameObjectsWithTag("Dragon").Length;
-
-        int enemyCap = GetEnemyCap();
-
-        spawnTimer -= Time.deltaTime;
-
-        // SPAWN
-        if (spawnTimer <= 0f)
-        {
-            if (enemyCount < enemyCap)
-            {
-                SpawnDragon();
-
-                spawnTimer = GetSpawnCooldown();
-            }
-        }
-
-        // DEBUG
-        if (debugMode)
-        {
-            debugTimer += Time.deltaTime;
-
-            if (debugTimer >= 0.5f)
-            {
-                Debug.Log(
-                    "TIME=" + elapsedTime.ToString("F1") +
-                    " | INTENSITY=" + intensity.ToString("F2") +
-                    " | ENEMIES=" + enemyCount +
-                    " | CAP=" + enemyCap +
-                    " | COOLDOWN=" + spawnTimer.ToString("F2")
-                );
-
-                debugTimer = 0f;
-            }
-        }
+        float t = elapsedTime * intensityGrowthSpeed;
+        return Mathf.Clamp01(1f - Mathf.Exp(-t));
     }
 
-    // =========================
-    // SPAWN COOLDOWN
-    // =========================
-
-    float GetSpawnCooldown()
+    // ----------------------------
+    // TARGET REAL
+    // ----------------------------
+    int GetTargetEnemies(float intensity)
     {
-        // Cuanta más intensidad,
-        // más rápido spawnea
-
-        float cooldown =
-            startSpawnCooldown / intensity;
-
-        return Mathf.Max(
-            minimumSpawnCooldown,
-            cooldown
-        );
+        float growth = Mathf.Pow(intensity, enemyGrowthPower);
+        return Mathf.RoundToInt(Mathf.Lerp(startEnemyTarget, maxEnemyTarget, growth));
     }
 
-    // =========================
-    // ENEMY CAP
-    // =========================
-
-    int GetEnemyCap()
+    // ----------------------------
+    // SPAWN DIRECTO PARA RELLENAR
+    // ----------------------------
+    void SpawnBurst(int amount, float intensity)
     {
-        return Mathf.RoundToInt(
-            startEnemyCap +
-            (intensity * enemyCapGrowth)
-        );
-    }
+        int spawns = Mathf.Min(amount, 5); // 🔥 límite por frame (importante)
 
-    // =========================
-    // SPAWN
-    // =========================
-
-    void SpawnDragon()
-    {
-        if (dragonPrefabs.Length <= 0)
-            return;
-
-        int lane = GetRandomBalancedLane();
-
-        int prefabIndex = Random.Range(
-            0,
-            dragonPrefabs.Length
-        );
-
-        GameObject dragon = Instantiate(
-            dragonPrefabs[prefabIndex],
-            lanes[lane].position,
-            Quaternion.identity
-        );
-
-        Dragones dr = dragon.GetComponent<Dragones>();
-
-        if (dr != null)
+        for (int i = 0; i < spawns; i++)
         {
-            dr.SetLane(lane);
-        }
+            int lane = GetWeightedLane();
+            int prefab = Random.Range(0, dragonPrefabs.Length);
 
-        if (debugMode)
-        {
-            Debug.Log(
-                "SPAWN -> Lane=" + lane
+            GameObject dragon = Instantiate(
+                dragonPrefabs[prefab],
+                lanes[lane].position,
+                Quaternion.identity
             );
+
+            dragon.GetComponent<Dragones>().SetLane(lane);
         }
     }
 
-    // =========================
-    // RANDOM BALANCED LANE
-    // =========================
-
-    int GetRandomBalancedLane()
+    // ----------------------------
+    // LANES BALANCEADOS
+    // ----------------------------
+    int GetWeightedLane()
     {
-        int[] laneWeights = new int[laneCount];
+        int[] laneWeight = new int[laneCount];
 
-        // Contar enemigos por lane
-        foreach (GameObject dragon in GameObject.FindGameObjectsWithTag("Dragon"))
+        GameObject[] dragons = GameObject.FindGameObjectsWithTag("Dragon");
+
+        foreach (GameObject d in dragons)
         {
-            Dragones dr = dragon.GetComponent<Dragones>();
-
+            Dragones dr = d.GetComponent<Dragones>();
             if (dr != null)
-            {
-                if (dr.lane >= 0 && dr.lane < laneCount)
-                {
-                    laneWeights[dr.lane]++;
-                }
-            }
+                laneWeight[dr.lane]++;
         }
 
-        // Buscar menor cantidad
-        int minWeight = int.MaxValue;
+        int bestLane = 0;
+        int min = int.MaxValue;
 
         for (int i = 0; i < laneCount; i++)
         {
-            if (laneWeights[i] < minWeight)
+            if (laneWeight[i] < min)
             {
-                minWeight = laneWeights[i];
+                min = laneWeight[i];
+                bestLane = i;
             }
         }
 
-        // Guardar lanes válidas
-        System.Collections.Generic.List<int> validLanes =
-            new System.Collections.Generic.List<int>();
-
-        for (int i = 0; i < laneCount; i++)
-        {
-            // Permite aleatoriedad manteniendo balance
-            if (laneWeights[i] <= minWeight + 1)
-            {
-                validLanes.Add(i);
-            }
-        }
-
-        // Random real
-        return validLanes[
-            Random.Range(0, validLanes.Count)
-        ];
+        return bestLane;
     }
 }

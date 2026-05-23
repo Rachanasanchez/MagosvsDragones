@@ -137,6 +137,8 @@ public class DragonesSpawner : MonoBehaviour
         Transform canvas = FindObjectOfType<Canvas>().transform;
         Transform panel = canvas.Find("Ganar_Partida");
 
+        SistemaGuardado.GuardarNivelCompletado();
+
         panel.gameObject.SetActive(true);
 
     }
