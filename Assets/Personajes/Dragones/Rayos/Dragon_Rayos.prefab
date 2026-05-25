@@ -125,7 +125,7 @@ MonoBehaviour:
   health: 25
   attack: 2
   lane: 0
-  audioAtaque: {fileID: 8300000, guid: 4f3727d56d1878a41a353e115f9233f2, type: 3}
+  audioAtaque: {fileID: 8300000, guid: 2c852fa0ce70c78468937b80e583f195, type: 3}
   audioVolar: {fileID: 8300000, guid: 8e7fe7ae84a041a41bda8e83fa3f2a52, type: 3}
   animacionMuerte: {fileID: 5239737205612133120, guid: 40e0cd9026e62814bbf1794b1124e926, type: 3}
   audioMuerte: {fileID: 8300000, guid: 189bca1d8edfb67408a008a1d8d626d3, type: 3}

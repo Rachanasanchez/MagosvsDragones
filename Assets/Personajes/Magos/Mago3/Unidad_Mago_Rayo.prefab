@@ -126,4 +126,4 @@ MonoBehaviour:
   puedeAtacar: 1
   dano: 0
   hechizo: {fileID: 2812514212737081040, guid: b59f318bd7fd4804c8fe629d4dd7cec0, type: 3}
-  audioDisparo: {fileID: 8300000, guid: 66d74b3534ba3c34fadd76656359eb81, type: 3}
+  audioDisparo: {fileID: 8300000, guid: e5cc5723f610e0d4a83055c9e222f27c, type: 3}
