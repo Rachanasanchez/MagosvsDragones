@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,8 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public static GameOverManager Instance;
-
     public GameObject panelGameOver;
+    public float tiempoSupervivencia;
+    public TMP_Text contadorNivel5Text;
+    public TMP_Text textoFinal;
+    private string sceneName;
+
     private bool gameOver = false;
 
     void Awake()
@@ -18,8 +23,23 @@ public class GameOverManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        sceneName = SceneManager.GetActiveScene().name;
+
     }
 
+    void Update()
+    {
+        if (sceneName == "Nivel5")
+        {
+            tiempoSupervivencia += Time.deltaTime;
+
+            int minutos = Mathf.FloorToInt(tiempoSupervivencia / 60);
+            int segundos = Mathf.FloorToInt(tiempoSupervivencia % 60);
+
+            contadorNivel5Text.text = $"{minutos:00}:{segundos:00}";
+        }
+        
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -35,8 +55,33 @@ public class GameOverManager : MonoBehaviour
         if (gameOver) return;
         gameOver = true;
 
+
+        if (sceneName == "Nivel5")
+        {
+            string tiempoString = FormatearTiempo(tiempoSupervivencia);
+
+            bool nuevoRecord = SistemaGuardado.EsNuevoRecord(tiempoString);
+
+            if (nuevoRecord)
+                SistemaGuardado.GuardarTiempoNivelInfinito(tiempoString);
+
+            string recordActual = PlayerPrefs.GetString("NivelInfinito", "00:00");
+
+            textoFinal.text = nuevoRecord
+                ? $"¡NUEVO RECORD!\nHas aguantado {tiempoString}"
+                : $"Has aguantado {tiempoString}\nTu record es de: {recordActual}";
+        }
+
         if (panelGameOver != null) panelGameOver.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    private string FormatearTiempo(float segundos)
+    {
+        int minutos = Mathf.FloorToInt(segundos / 60);
+        int segundosRestantes = Mathf.FloorToInt(segundos % 60);
+
+        return minutos.ToString("00") + ":" + segundosRestantes.ToString("00");
     }
 
     public void Retry()

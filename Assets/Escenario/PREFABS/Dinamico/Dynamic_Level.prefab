@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1400323484589997937}
   - component: {fileID: 3045522403295075404}
-  - component: {fileID: 1151174759918963169}
+  - component: {fileID: 3636812872367590964}
+  - component: {fileID: 5107447295764435167}
   m_Layer: 0
-  m_Name: Dragones_Manager_Nivel3
+  m_Name: Dynamic_Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455fd0fedc02a1841984ab27cc90f57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1151174759918963169
+--- !u!114 &3636812872367590964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,15 +55,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1018725089486661849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c84b0a56b61dd1459bf03160ffedcc0, type: 3}
+  m_Script: {fileID: 11500000, guid: b316bdf964ed1ad40a8689fcbc8a4f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragonesPrefab:
+  dragonPrefabs:
   - {fileID: 3118328225198995877, guid: 22a3fa5c8b2141b4ea70423fc582b8df, type: 3}
-  - {fileID: 3235512896909162955, guid: 2c1317cc7f1d2fd4497529a1d20f0d32, type: 3}
   - {fileID: 3118328225198995877, guid: 66d0757444599734b99bd6dd4f727d3b, type: 3}
-  tiempoDeEspera: 20
-  segundosOleada: 220
-  cantidadDragones: 115
-  cantidadFinal: 90
+  - {fileID: 3235512896909162955, guid: 2c1317cc7f1d2fd4497529a1d20f0d32, type: 3}
+  baseIntensityGrowth: 0.08
+  maxIntensity: 500
+  spawnCooldownMin: 0.3
+  spawnCooldownMax: 2.5
+  baseMaxEnemiesOnField: 10
+  maxEnemiesHardCap: 80
+  debugMode: 1
   sliderRonda: {fileID: 0}
+--- !u!114 &5107447295764435167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018725089486661849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11390ec64d509bc4c9d84522a4a88499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedMode: 1
+  levelDurations:
+  - 20
+  - 120
+  - 180
+  selectedLevel: 0
+  difficultyMultiplier: 5
+  director: {fileID: 3636812872367590964}

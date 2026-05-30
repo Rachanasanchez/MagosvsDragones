@@ -94,6 +94,16 @@ public class DragonesSpawner : MonoBehaviour
             return;
         }
 
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            SistemaGuardado.GuardarNivelCompletado();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SistemaGuardado.ReiniciarProgreso();
+        }
+
         UpdateUI();
     }
     void UpdateUI()

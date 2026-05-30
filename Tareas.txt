@@ -1,0 +1,15 @@
+Controlar vida/ataque de los personajes
+
+--NO - Manager de spawn zombis. Ejemplo: 15 zombis en 2 minutos (NO HACER)
+
+
+
+
+
+*Cuando los dragones lleguen al final del tablero ¡HAS PERDIDO! y te dara la opcion de volver a intentar o salir 
+
+*Menu de inicio
+
+*Pausa de juego 
+
+*Nivel 2
