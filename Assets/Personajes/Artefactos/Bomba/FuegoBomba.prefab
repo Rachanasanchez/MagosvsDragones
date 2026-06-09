@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e869a40dce775c44a9dd61405537ca68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sonido_explosion: {fileID: 8300000, guid: 3cc2cc1b14beb4049afcc21ecb2a3fd1, type: 3}
 --- !u!95 &-2958669594980522915
 Animator:
   serializedVersion: 5

@@ -93,17 +93,6 @@ public class DragonesSpawner : MonoBehaviour
             contadorText.text = "OLEADA FINAL";
             return;
         }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SistemaGuardado.GuardarNivelCompletado();
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SistemaGuardado.ReiniciarProgreso();
-        }
-
         UpdateUI();
     }
     void UpdateUI()
