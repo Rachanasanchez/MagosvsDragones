@@ -254,20 +254,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tu objetivo es evitar que los dragones lleguen al final del tablero.\n\nPara
+  m_text: "Tu objetivo es evitar que los dragones lleguen al final del tablero.\r\n\r\nPara
     defenderte, debes recoger cristales. Con ellos podr\xE1s comprar magos en la
-    tienda y colocarlos en las casillas del tablero.\n\nDurante la partida aparecer\xE1n
-    cristales que tendr\xE1s que recoger haciendo click sobre ellos. Si no eres lo
-    bastante r\xE1pido para cogerlos al vuelo, permanecer\xE1n unos segundos en la
-    parte inferior del tablero antes de desaparecer.\n\nEl mago fuego ataca a distancia,
-    por lo que es ideal para da\xF1ar dragones desde lejos. El mago espada laser
-    solo ataca cuando los enemigos est\xE1n cerca, siendo m\xE1s efectivo como defensa
-    cercana.\n\nEl dragon fuego lanza fuego contra los magos. El dragon aire sopla,
-    puede hacer desaparecer los cristales y tambi\xE9n esquivar a los magos.\n\nLos
-    controles son simples: haz click en un mago para seleccionarlo, haz click en
-    una casilla para colocarlo y haz click en los cristales para recogerlos.\n\nCombina
-    bien tus magos y administra los cristales para impedir que los dragones atraviesen
-    el tablero."
+    tienda y colocarlos en las casillas del tablero.\r\n\r\nDurante la partida aparecer\xE1n
+    cristales que tendr\xE1s que recoger haciendo clic sobre ellos antes de que desaparezcan.\r\n\r\nCada
+    mago posee habilidades diferentes: algunos atacan a distancia, otros son m\xE1s
+    efectivos en combate cercano. Los dragones tambi\xE9n tienen habilidades \xFAnicas
+    que pondr\xE1n a prueba tu estrategia.\r\n\r\nLos controles son simples: haz
+    clic en un mago para seleccionarlo, haz clic en una casilla para colocarlo y
+    haz clic en los cristales para recogerlos.\r\n\r\nCombina bien tus magos y administra
+    los cristales para impedir que los dragones atraviesen el tablero.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c6ae11534286ac4981fa8d716b8300a, type: 2}
   m_sharedMaterial: {fileID: -2647211981142931816, guid: 6c6ae11534286ac4981fa8d716b8300a, type: 2}
@@ -361,7 +357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &26142277
 RectTransform:
   m_ObjectHideFlags: 0
